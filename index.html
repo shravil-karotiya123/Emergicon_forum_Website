@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EMERGICON — Department of Computer Science &amp; Engineering (Data Science)</title>
+  <meta name="description" content="Official forum and digital presence of the Department of Computer Science &amp; Engineering (Data Science). Fostering innovation, frontier research, technical leadership, and collaborative development.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+
+  <!-- Immediate Scroll-to-Top Reset on Page Load / Refresh -->
+  <script>
+    if ('scrollRestoration' in history) {
+      history.scrollRestoration = 'manual';
+    }
+    window.scrollTo(0, 0);
+  </script>
+</head>
+<body>
+
+  <!-- Analog Film Grain Noise Overlay -->
+  <div class="noise-overlay" aria-hidden="true"></div>
+
+  <!-- Custom Trailing Cursor -->
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
+
+  <!-- Invisible AI Hand Gesture Air Cursor (Appears when hand is present) -->
+  <div id="air-cursor" aria-hidden="true"></div>
+
+  <!-- Background Space Canvas Layer -->
+  <canvas id="space-canvas" class="canvas-layer"></canvas>
+  <canvas id="explosion-canvas" class="canvas-layer"></canvas>
+
+  <!-- =========================================================================
+       SIGNATURE INTRO EXPERIENCE OVERLAY
+       Stage 1: Pure Black Screen + "EMERGICON" Typography
+       Stage 2: Official Video Reveal (128476.mp4) — Fully Automated & Seamless
+       Stage 3: Automatic Website Reveal
+       ========================================================================= -->
+  <div id="intro-overlay" aria-label="Intro Screen">
+    <!-- Stage 1: Typography Only -->
+    <div id="intro-text-stage" class="intro-text-stage">
+      <h1 class="intro-title">EMERGICON</h1>
+    </div>
+
+    <!-- Stage 2: Video Reveal Stage (128476.mp4) -->
+    <div id="intro-video-stage" class="intro-video-stage">
+      <div class="intro-video-container">
+        <video id="intro-video" class="intro-video-el" src="assets/videos/128476.mp4" playsinline muted autoplay preload="auto"></video>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       MAIN APPLICATION CONTENT (HANDCRAFTED EDITORIAL)
+       ========================================================================= -->
+  <div id="app-content">
+
+    <!-- Floating Glass Navbar (Linear / Apple Style) -->
+    <nav id="main-navbar">
+      <div class="container-wide">
+        <div class="nav-container">
+          <a href="#hero" class="nav-brand">
+            <img src="assets/images/logo.png" alt="Logo" class="nav-logo-icon">
+            <span class="nav-brand-text">EMERGICON</span>
+          </a>
+
+          <ul id="nav-links" class="nav-links">
+            <li><a href="#hero" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#team" class="nav-link">Forum Team</a></li>
+            <li><a href="#clubs" class="nav-link">Clubs</a></li>
+            <li><a href="#events" class="nav-link">Events</a></li>
+            <li><a href="#gallery" class="nav-link">Gallery</a></li>
+            <li><a href="#faculty" class="nav-link">Faculty</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+
+          <div class="nav-actions">
+            <button id="audio-toggle" class="audio-toggle-btn" aria-label="Toggle Ambient Audio">
+              🔇 AUDIO // MUTED
+            </button>
+            <a href="#contact" class="btn btn-primary nav-cta">
+              Contact Dept
+            </a>
+            <button id="mobile-toggle" class="mobile-toggle" aria-label="Toggle Menu">☰</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- SECTION 1: HERO SECTION -->
+    <section id="hero" class="hero-section">
+      <div class="container">
+        <div class="hero-content">
+          <!-- Logo Positioned Elegantly Above Title -->
+          <div class="hero-logo-center-wrap">
+            <img src="assets/images/logo.png" alt="EMERGICON Emblem" class="hero-center-logo">
+          </div>
+
+          <div class="hero-mission-badge font-mono">
+            <span class="badge-dot-live"></span>
+            Department of CSE (Data Science) &bull; Academic Year 2026&ndash;2027
+          </div>
+
+          <h1 class="hero-headline">
+            EMERGICON
+          </h1>
+
+          <div class="hero-dept-title">
+            Department of Computer Science &amp; Engineering (Data Science)
+          </div>
+
+          <div class="hero-tagline">
+            Innovation &bull; Research &bull; Technology &bull; Leadership
+          </div>
+
+          <div class="hero-actions">
+            <a href="#events" class="btn btn-primary">
+              Upcoming Events <span class="btn-icon">&rarr;</span>
+            </a>
+            <a href="#about" class="btn btn-outline">
+              About Department
+            </a>
+          </div>
+
+          <!-- 3 Independent Floating Glass Cards (Detached with Soft Depth) -->
+          <div class="hero-floating-cards">
+            <div class="hero-info-card">
+              <span class="hero-card-label">Core Specialization</span>
+              <span class="hero-card-value">AI &amp; Data Science</span>
+            </div>
+            <div class="hero-info-card">
+              <span class="hero-card-label">Compute Infrastructure</span>
+              <span class="hero-card-value">NVIDIA A100 &bull; Online</span>
+            </div>
+            <div class="hero-info-card">
+              <span class="hero-card-label">Campus Tech Hub</span>
+              <span class="hero-card-value">Innovation Complex</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="hairline-divider"></div>
+
+    <!-- SECTION 2: ABOUT DEPARTMENT (ASYMMETRIC EDITORIAL SPLIT) -->
+    <section id="about">
+      <div class="container">
+        <div class="section-header-editorial">
+          <div class="section-tag">// 01. ABOUT DEPARTMENT</div>
+          <h2 class="section-title">The Data Science Frontier</h2>
+          <p class="section-subtitle">
+            Bridging foundational mathematical computing with scalable deep learning systems and applied data engineering.
+          </p>
+        </div>
+
+        <div class="about-split-layout">
+          <!-- Left: Narrative -->
+          <div class="about-narrative">
+            <h3>Pioneering Computational Intelligence for Tomorrow's Engineers</h3>
+            <p>
+              The Department of Computer Science &amp; Engineering (Data Science) delivers a rigorous curriculum benchmarked against international ACM/IEEE standards. We empower students to tackle high-dimensional data challenges, neural architectures, and distributed systems.
+            </p>
+            <p>
+              Through close industry alliances and dedicated laboratory clusters, undergraduates transition from theoretical principles to production-grade model deployments.
+            </p>
+            <div style="display: flex; gap: 1rem;">
+              <a href="#faculty" class="btn btn-outline" style="font-size: 0.8rem; padding: 10px 20px;">
+                Meet Our Faculty &rarr;
+              </a>
+            </div>
+          </div>
+
+          <!-- Right: Visual Card with Overlay -->
+          <div class="about-visual-card">
+            <img src="assets/images/hackathon.jpg" alt="Data Science Lab Floor" class="about-photo">
+            <div class="about-badge-overlay">
+              <div class="about-badge-tag">// RESEARCH CLUSTER</div>
+              <div class="about-badge-title">High-Performance GPU Computing Lab</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4 Academic Highlights -->
+        <div class="pillars-grid-refined">
+          <div class="pillar-card-refined">
+            <div class="pillar-idx">01 // ACADEMICS</div>
+            <h4>Outcome-Based Curriculum</h4>
+            <p>Structured around modern data pipelines, machine learning theory, and statistical inference.</p>
+          </div>
+          <div class="pillar-card-refined">
+            <div class="pillar-idx">02 // RESEARCH</div>
+            <h4>Applied R&amp;D Clusters</h4>
+            <p>Student research cohorts in foundation models, computer vision, and edge robotics.</p>
+          </div>
+          <div class="pillar-card-refined">
+            <div class="pillar-idx">03 // ALLIANCES</div>
+            <h4>Industry Partnerships</h4>
+            <p>Collaborative project sponsorships and technical mentorship from enterprise tech leaders.</p>
+          </div>
+          <div class="pillar-card-refined">
+            <div class="pillar-idx">04 // FACILITIES</div>
+            <h4>Supercomputing Lab</h4>
+            <p>Dedicated compute clusters equipped with high-density GPU nodes for model training.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="hairline-divider"></div>
+
+    <!-- SECTION 3: FORUM TEAM SECTION (PREMIUM 3D SPATIAL ORBIT & FLOWING CO-TEAM) -->
+    <section id="team">
+      <div class="container">
+        <div class="section-header-editorial">
+          <div class="section-tag">// 02. STUDENT FORUM COUNCIL</div>
+          <h2 class="section-title">EMERGICON Forum Team</h2>
+          <p class="section-subtitle">
+            The dedicated student leadership governing technical symposiums, hackathons, and high-performance computing cohorts.
+          </p>
+        </div>
+
+        <!-- HIERARCHY LEVEL 01: CORE TEAM (8 HEADS) 3D SPATIAL ORBIT -->
+        <div class="team-hierarchy-block">
+          <div class="team-hierarchy-title-wrap">
+            <div class="team-hierarchy-heading">
+              <span>// 01. CORE LEADERSHIP COUNCIL</span>
+            </div>
+            <span class="team-count-badge">8 HEADS // 3D ORBIT</span>
+          </div>
+
+          <!-- 3D Spatial Orbit Showcase -->
+          <div class="core-orbit-container">
+            <div id="core-team-orbit-stage" class="core-orbit-stage" tabindex="0" aria-label="3D Core Leadership Orbit Carousel">
+              <div id="core-team-cards-wrap" class="core-orbit-cards-wrap">
+                <!-- Dynamically Injected by team-showcase.js -->
+              </div>
+            </div>
+
+            <!-- Orbit Navigation Controls -->
+            <div class="orbit-nav-row">
+              <button id="core-team-prev-btn" class="orbit-btn" aria-label="Previous Leadership Member">&larr;</button>
+              <div id="core-team-dots-wrap" class="orbit-dots-wrap">
+                <!-- Dynamically Injected Dots -->
+              </div>
+              <button id="core-team-next-btn" class="orbit-btn" aria-label="Next Leadership Member">&rarr;</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- HIERARCHY LEVEL 02: CO-TEAM (18 CO-HEADS) 3D CURVED ARC GALLERY -->
+        <div class="team-hierarchy-block" style="margin-bottom: 1rem;">
+          <div class="team-hierarchy-title-wrap">
+            <div class="team-hierarchy-heading">
+              <span>// 02. CO-TEAM EXECUTIVES</span>
+            </div>
+            <span class="team-count-badge">18 CO-HEADS // CURVED 3D GALLERY</span>
+          </div>
+
+          <!-- 3D Flowing Curved Arc Showcase -->
+          <div class="co-team-curved-section">
+            <div id="co-team-curved-stage" class="co-team-curved-stage" tabindex="0" aria-label="3D Curved Arc Co-Team Gallery">
+              <div id="co-team-curved-track" class="co-team-curved-track">
+                <!-- Dynamically Injected by team-showcase.js -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="hairline-divider"></div>
+
+    <!-- SECTION 4: DEPARTMENT TECHNICAL CLUBS (RADIAL PINWHEEL CLUSTER // REFERENCE DESIGN) -->
+    <section id="clubs">
+      <div class="container">
+        <div class="section-header-editorial">
+          <div class="section-tag">// 03. TECHNICAL CHAPTERS &amp; COHORTS</div>
+          <h2 class="section-title">Department Technical Clubs</h2>
+          <p class="section-subtitle">
+            Ten specialized student-driven technical chapters advancing research cohorts, competitive programming, and creative excellence.
+          </p>
+        </div>
+
+        <!-- 360° Radial Pinwheel Cluster Container -->
+        <div class="clubs-cluster-container">
+          <div id="clubs-cluster-stage" class="clubs-cluster-stage" tabindex="0" aria-label="360 Degree Radial Pinwheel Clubs Showcase">
+            
+            <!-- Central Command Focal Hub (Matching Reference Design) -->
+            <div id="clubs-focal-hub" class="clubs-focal-hub" role="button" tabindex="0" aria-label="Explore active club profile">
+              <div class="focal-hub-header">
+                <span class="focal-status-dot"></span>
+                <span id="focal-club-idx" class="focal-idx font-mono">01 // 10</span>
+              </div>
+              <h3 id="focal-club-name" class="focal-club-name">Cultural Club</h3>
+              <div id="focal-club-head" class="focal-club-head">Palak Singh</div>
+              <p id="focal-club-tag" class="focal-club-tag">Arts, Performing Stage &amp; Creative Expression</p>
+              <div class="focal-explore-hint font-mono">CLICK / TAP TO EXPLORE &rarr;</div>
+            </div>
+
+            <!-- Overlapping Floating Radial Cards Wrap -->
+            <div id="clubs-cluster-cards-wrap" class="clubs-cluster-cards-wrap">
+              <!-- Dynamically Injected by team-showcase.js -->
+            </div>
+          </div>
+
+          <!-- Controls Navigation Row -->
+          <div class="clubs-nav-row">
+            <button id="clubs-prev-btn" class="clubs-btn" aria-label="Previous Technical Club">&larr;</button>
+            <div class="carousel-instruction-pill">
+              <span>DRAG / TAP / AUTO-SHOWCASE</span>
+            </div>
+            <button id="clubs-next-btn" class="clubs-btn" aria-label="Next Technical Club">&rarr;</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="hairline-divider"></div>
+
+    <!-- SECTION 5: UPCOMING EVENTS (MAGAZINE STYLE) -->
+    <section id="events">
+      <div class="container">
+        <div class="section-header-editorial">
+          <div class="section-tag">// 04. UPCOMING EVENTS</div>
+          <h2 class="section-title">Calendar of Conclaves</h2>
+          <p class="section-subtitle">
+            Upcoming national hackathons, technical masterclasses, and research symposiums hosted by the Department.
+          </p>
+        </div>
+
+        <div class="events-magazine-grid">
+          <!-- Featured Large Event Block -->
+          <div class="event-feature-card">
+            <div class="event-feature-banner">
+              <img src="assets/images/hackathon.jpg" alt="EMERGICON Hackathon" class="event-feature-img">
+            </div>
+            <div class="event-feature-body">
+              <div>
+                <div class="event-meta-badge">OCTOBER 24&ndash;26, 2026 &bull; NATIONAL SPRINT</div>
+                <h3 class="event-card-title" style="font-size: 1.6rem;">EMERGICON Data Hackathon</h3>
+                <p class="event-card-desc">
+                  36-hour continuous build sprint deploying production predictive models, distributed streaming architectures, and autonomous decision engines.
+                </p>
+              </div>
+              <div class="event-footer-bar">
+                <span>VENUE: AUDITORIUM ALPHA</span>
+                <a href="#rsvp-modal" class="btn btn-primary rsvp-trigger" data-event-name="EMERGICON Data Hackathon" style="padding: 10px 20px; font-size: 0.78rem;">
+                  Register Seat &rarr;
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Side Stack of Compact Event Cards -->
+          <div class="event-side-stack">
+            <!-- Event 2 -->
+            <div class="event-compact-card">
+              <div>
+                <div class="event-meta-badge">NOVEMBER 14, 2026 &bull; RESEARCH SUMMIT</div>
+                <h4 class="event-card-title">Frontier AI Research Symposium</h4>
+                <p class="event-card-desc">
+                  Keynotes, paper presentations, and architectural panel debates with research directors and Silicon Valley scientists.
+                </p>
+              </div>
+              <div class="event-footer-bar">
+                <span>VENUE: MAIN HALL</span>
+                <a href="#rsvp-modal" class="btn btn-outline rsvp-trigger" data-event-name="Frontier AI Research Symposium" style="padding: 8px 16px; font-size: 0.75rem;">
+                  Register &rarr;
+                </a>
+              </div>
+            </div>
+
+            <!-- Event 3 -->
+            <div class="event-compact-card">
+              <div>
+                <div class="event-meta-badge">DECEMBER 05, 2026 &bull; HANDS-ON LAB</div>
+                <h4 class="event-card-title">Edge AI &amp; ROS2 Masterclass</h4>
+                <p class="event-card-desc">
+                  Hands-on laboratory workshop deploying real-time computer vision tracking and autonomous path planning algorithms.
+                </p>
+              </div>
+              <div class="event-footer-bar">
+                <span>VENUE: ROBOTICS LAB</span>
+                <a href="#rsvp-modal" class="btn btn-outline rsvp-trigger" data-event-name="Edge AI & ROS2 Masterclass" style="padding: 8px 16px; font-size: 0.75rem;">
+                  Register &rarr;
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="hairline-divider"></div>
+
+    <!-- SECTION 6: EVENT GALLERY (PREMIUM 3D INFINITE CAROUSEL) -->
+    <section id="gallery">
+      <div class="container-wide">
+        <div class="section-header-editorial">
+          <div class="section-tag">// 05. EVENT GALLERY</div>
+          <h2 class="section-title">Department Visual Archive</h2>
+          <p class="section-subtitle">
+            An interactive 3D spatial showcase of student achievements, hackathon build floors, hardware prototypes, and keynote addresses.
+          </p>
+        </div>
+
+        <div class="gallery-section-wrap">
+          <!-- 3D Perspective Stage -->
+          <div id="gallery-3d-stage" class="gallery-3d-stage" aria-roledescription="carousel" aria-label="Department Events 3D Carousel">
+            <div id="gallery-carousel-track" class="gallery-carousel-track">
+              <!-- Dynamically populated from galleryEventsData in gallery-carousel.js -->
+            </div>
+          </div>
+
+          <!-- Carousel Navigation & Dots UI -->
+          <div class="carousel-nav-container">
+            <div class="carousel-nav-bar">
+              <button id="carousel-prev-btn" class="carousel-btn" aria-label="Previous Slide">&larr;</button>
+              <div id="carousel-dots-wrap" class="carousel-dots-wrap" role="tablist"></div>
+              <button id="carousel-next-btn" class="carousel-btn" aria-label="Next Slide">&rarr;</button>
+            </div>
+            <div class="carousel-instruction-pill font-mono">
+              <span>DRAG / SWIPE HORIZONTALLY</span>
+              <span>&bull;</span>
+              <span>&larr; &rarr; ARROWS</span>
+              <span>&bull;</span>
+              <span>CLICK TO CENTER</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="hairline-divider"></div>
+
+    <!-- SECTION 7: FACULTY DIRECTORY -->
+    <section id="faculty">
+      <div class="container">
+        <div class="section-header-editorial">
+          <div class="section-tag">// 06. FACULTY LEADERSHIP</div>
+          <h2 class="section-title">Academic &amp; Research Faculty</h2>
+          <p class="section-subtitle">
+            Distinguished professors, research chairs, and industry fellows guiding the Department of CSE (Data Science).
+          </p>
+        </div>
+
+        <div class="faculty-grid-refined">
+          <!-- Faculty 1: HOD -->
+          <div class="faculty-card-refined">
+            <div class="faculty-photo-wrap">
+              <img src="assets/images/leader-3.jpg" alt="Dr. Rajeshwari Menon" class="faculty-photo-img">
+            </div>
+            <div class="faculty-info-box">
+              <h3 class="faculty-name">Dr. Rajeshwari Menon</h3>
+              <div class="faculty-designation">Head of Department (HOD)</div>
+              <p class="faculty-spec">Ph.D. &bull; Distributed Systems &amp; Big Data</p>
+            </div>
+          </div>
+
+          <!-- Faculty 2 -->
+          <div class="faculty-card-refined">
+            <div class="faculty-photo-wrap">
+              <img src="assets/images/leader-4.jpg" alt="Dr. Anand Kulkarni" class="faculty-photo-img">
+            </div>
+            <div class="faculty-info-box">
+              <h3 class="faculty-name">Dr. Anand Kulkarni</h3>
+              <div class="faculty-designation">Professor &amp; Research Chair</div>
+              <p class="faculty-spec">Ph.D. &bull; Deep Learning &amp; Computer Vision</p>
+            </div>
+          </div>
+
+          <!-- Faculty 3 -->
+          <div class="faculty-card-refined">
+            <div class="faculty-photo-wrap">
+              <img src="assets/images/leader-2.jpg" alt="Dr. Neha Sharma" class="faculty-photo-img">
+            </div>
+            <div class="faculty-info-box">
+              <h3 class="faculty-name">Dr. Neha Sharma</h3>
+              <div class="faculty-designation">Associate Professor</div>
+              <p class="faculty-spec">Ph.D. &bull; NLP &amp; Foundation Models</p>
+            </div>
+          </div>
+
+          <!-- Faculty 4 -->
+          <div class="faculty-card-refined">
+            <div class="faculty-photo-wrap">
+              <img src="assets/images/leader-1.jpg" alt="Prof. Suresh Reddy" class="faculty-photo-img">
+            </div>
+            <div class="faculty-info-box">
+              <h3 class="faculty-name">Prof. Suresh Reddy</h3>
+              <div class="faculty-designation">Assistant Professor</div>
+              <p class="faculty-spec">M.Tech &bull; Cloud Infrastructure &amp; Security</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="hairline-divider"></div>
+
+    <!-- SECTION 8: CONTACT SECTION -->
+    <section id="contact">
+      <div class="container">
+        <div class="section-header-editorial">
+          <div class="section-tag">// 07. CONTACT &amp; CONNECT</div>
+          <h2 class="section-title">Connect with the Department</h2>
+          <p class="section-subtitle">
+            Get in touch with the Department of CSE (Data Science) administration or the EMERGICON Forum Executive Council.
+          </p>
+        </div>
+
+        <div class="contact-split-refined">
+          <!-- Left Contact Details -->
+          <div class="contact-info-panel">
+            <div class="contact-detail-block">
+              <div class="contact-label">// CAMPUS LOCATION</div>
+              <div class="contact-val">Department of CSE (Data Science)</div>
+              <div class="contact-subval">Block IV, Floor 3 &bull; Campus Tech Innovation Complex</div>
+            </div>
+
+            <div class="contact-detail-block">
+              <div class="contact-label">// ELECTRONIC DISPATCH</div>
+              <div class="contact-val">datascience.dept@college.edu</div>
+              <div class="contact-subval">emergicon.forum@college.edu</div>
+            </div>
+
+            <div class="contact-detail-block">
+              <div class="contact-label">// TELEPHONE CONTACT</div>
+              <div class="contact-val">+91 (011) 2659-7100</div>
+              <div class="contact-subval">Mon &ndash; Fri &bull; 09:00 AM &ndash; 05:00 PM IST</div>
+            </div>
+
+            <div class="contact-detail-block">
+              <div class="contact-label">// GLOBAL COORDINATES</div>
+              <div class="contact-val font-mono" style="font-size: 0.85rem;">28.6139&deg; N, 77.2090&deg; E</div>
+            </div>
+          </div>
+
+          <!-- Right Message Dispatch Form -->
+          <div class="contact-form-card">
+            <form id="contact-form" class="contact-form">
+              <div class="form-group">
+                <label class="form-label" for="contact-name">Your Full Name</label>
+                <input type="text" id="contact-name" class="form-input" placeholder="e.g. Maya Chen" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="contact-email">Email Address</label>
+                <input type="email" id="contact-email" class="form-input" placeholder="name@domain.edu" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="contact-subject">Inquiry Domain</label>
+                <select id="contact-subject" class="form-select" required>
+                  <option value="General Department Inquiry">General Department Inquiry</option>
+                  <option value="Forum Membership &amp; Clubs">Forum Membership &amp; Clubs</option>
+                  <option value="Research &amp; Industry Collaboration">Research &amp; Industry Collaboration</option>
+                  <option value="Event Sponsorship / Speaking">Event Sponsorship / Speaking</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="contact-message">Message / Dispatch</label>
+                <textarea id="contact-message" class="form-textarea" placeholder="How can the department assist you?" required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 0.5rem;">
+                Transmit Message &rarr;
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         INTERACTIVE IN-PAGE EVENT DETAILS SHOWCASE OVERLAY
+         ========================================================================= -->
+    <div id="event-showcase-overlay" aria-modal="true" role="dialog" aria-labelledby="showcase-title">
+      <div class="showcase-container">
+        <button id="showcase-close-btn" class="showcase-close-btn" aria-label="Close Event Showcase">&times;</button>
+        
+        <!-- Hero Image Banner -->
+        <div class="showcase-hero-banner">
+          <img id="showcase-hero-img" src="" alt="Event Banner" class="showcase-hero-img">
+          <div class="showcase-hero-gradient"></div>
+          <div id="showcase-tag-badge" class="showcase-tag-badge">
+            <span class="badge-dot-live"></span>
+            <span>EVENT TRACK</span>
+          </div>
+        </div>
+
+        <!-- Body Content Container -->
+        <div class="showcase-body-content">
+          <!-- Header Block -->
+          <div class="showcase-header-block">
+            <div class="showcase-meta-line font-mono">
+              <span id="showcase-date">DATE</span>
+              <span>&bull;</span>
+              <span id="showcase-venue">VENUE</span>
+            </div>
+            <h2 id="showcase-title" class="showcase-title">Event Title</h2>
+            <div id="showcase-team" class="showcase-organizer">Organizing Team</div>
+          </div>
+
+          <!-- Key Telemetry Stats Grid (Bento) -->
+          <div id="showcase-stats-grid" class="showcase-stats-grid">
+            <!-- Dynamically injected -->
+          </div>
+
+          <!-- Full Editorial Narrative -->
+          <div class="showcase-narrative-section">
+            <h4>// CONCLAVE OVERVIEW &amp; OBJECTIVES</h4>
+            <p id="showcase-desc">Event description...</p>
+          </div>
+
+          <!-- Dedicated Multi-Photo Gallery -->
+          <div class="showcase-gallery-section">
+            <div class="showcase-gallery-section-title">// EVENT RETROSPECTIVE GALLERY &bull; CLICK TO EXPAND</div>
+            <div id="showcase-photos-grid" class="showcase-photos-grid">
+              <!-- Dynamically injected -->
+            </div>
+          </div>
+
+          <!-- Action Bar -->
+          <div class="showcase-action-bar">
+            <div class="font-mono" style="font-size: 0.72rem; color: var(--text-muted);">
+              [ESC] TO RETURN TO CAROUSEL &bull; AI FIST GESTURE SUPPORTED
+            </div>
+            <div style="display: flex; gap: 1rem;">
+              <a href="#rsvp-modal" id="showcase-rsvp-btn" class="btn btn-primary rsvp-trigger" data-event-name="EMERGICON Event" style="padding: 10px 22px; font-size: 0.8rem;">
+                Register Seat &rarr;
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FULLSCREEN LIGHTBOX MODAL -->
+    <div id="gallery-lightbox" aria-modal="true" role="dialog">
+      <div class="lightbox-content-wrap">
+        <button id="lightbox-close" class="lightbox-close" aria-label="Close Lightbox">&times;</button>
+        <button id="lightbox-prev" class="lightbox-nav-btn lightbox-prev" aria-label="Previous Image">&larr;</button>
+        <button id="lightbox-next" class="lightbox-nav-btn lightbox-next" aria-label="Next Image">&rarr;</button>
+        <img id="lightbox-img" src="" alt="Exhibition View" class="lightbox-img">
+        <div class="lightbox-caption-bar">
+          <div id="lightbox-category" class="lightbox-category">CSE (DATA SCIENCE)</div>
+          <h3 id="lightbox-title" class="lightbox-title">Department Archive</h3>
+        </div>
+      </div>
+    </div>
+
+    <!-- RSVP MODAL -->
+    <div id="rsvp-modal" aria-modal="true" role="dialog">
+      <div class="modal-dialog">
+        <button id="rsvp-close" class="modal-close" aria-label="Close RSVP Modal">&times;</button>
+        <div class="section-tag" style="margin-bottom: 0.5rem;">// REGISTRATION GATEWAY</div>
+        <h3 class="section-title" style="font-size: 1.6rem; margin-bottom: 0.5rem; text-align: left;">
+          Event Registration
+        </h3>
+        <p style="color: var(--text-secondary); font-size: 0.85rem; margin-bottom: 1.5rem; font-weight: 400;">
+          Reserve your pass for upcoming EMERGICON Department of CSE (Data Science) conclaves.
+        </p>
+
+        <form id="rsvp-form">
+          <div class="form-group">
+            <label class="form-label" for="rsvp-name">Student / Delegate Full Name</label>
+            <input type="text" id="rsvp-name" class="form-input" placeholder="e.g. Maya Chen" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="rsvp-email">Institutional Email</label>
+            <input type="email" id="rsvp-email" class="form-input" placeholder="student@university.edu" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="rsvp-event-select">Select Conclave Track</label>
+            <select id="rsvp-event-select" class="form-select" required>
+              <option value="EMERGICON Data Hackathon">EMERGICON Data Hackathon</option>
+              <option value="Frontier AI Research Symposium">Frontier AI Research Symposium</option>
+              <option value="Edge AI &amp; ROS2 Masterclass">Edge AI &amp; ROS2 Masterclass</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">
+            Confirm Registration &rarr;
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- =========================================================================
+         EXPANDABLE FORUM TEAM MEMBER PROFILE MODAL
+         ========================================================================= -->
+    <div id="team-member-modal" aria-modal="true" role="dialog" aria-labelledby="team-modal-name">
+      <div class="team-modal-container">
+        <button id="team-modal-close-btn" class="team-modal-close-btn" aria-label="Close Member Profile">&times;</button>
+        
+        <div class="team-modal-header">
+          <div class="team-modal-avatar-wrap">
+            <img id="team-modal-photo" src="" alt="Member Photo" class="team-modal-avatar">
+          </div>
+          <div class="team-modal-title-box">
+            <span id="team-modal-badge" class="team-modal-badge font-mono">// CORE LEADERSHIP</span>
+            <h3 id="team-modal-name" class="team-modal-name">Member Name</h3>
+            <span id="team-modal-role" class="team-modal-role font-mono">Role Title</span>
+            <span id="team-modal-designation" class="team-modal-designation">Department Designation</span>
+          </div>
+        </div>
+
+        <p id="team-modal-bio" class="team-modal-bio">
+          Member bio and focus area narrative...
+        </p>
+
+        <div class="team-modal-actions">
+          <a id="team-modal-linkedin-btn" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary team-modal-btn">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+              <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.25c-.9 0-1.62.72-1.62 1.63 0 .9.72 1.62 1.62 1.62.9 0 1.63-.72 1.63-1.62 0-.91-.73-1.63-1.63-1.63Z"/>
+            </svg>
+            <span>Connect on LinkedIn &rarr;</span>
+          </a>
+          <a id="team-modal-email-btn" href="#" class="btn btn-outline team-modal-btn">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+              <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/>
+            </svg>
+            <span>Send Email &rarr;</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hidden Video Element for Real-Time Gesture Tracker -->
+    <video id="gesture-video" width="320" height="240" playsinline muted style="display: none;"></video>
+
+    <!-- ACADEMIC FOOTER -->
+    <footer class="footer-section">
+      <div class="container-wide">
+        <div class="footer-top-grid">
+          <!-- Col 1: Brand -->
+          <div>
+            <a href="#hero" class="nav-brand">
+              <img src="assets/images/logo.png" alt="Logo" class="nav-logo-icon">
+              <span class="nav-brand-text">EMERGICON</span>
+            </a>
+            <p class="footer-brand-desc">
+              Department of Computer Science &amp; Engineering (Data Science) &bull; Official Student Innovation Forum.
+            </p>
+          </div>
+
+          <!-- Col 2: Navigation -->
+          <div>
+            <h4 class="footer-col-title">Navigation</h4>
+            <ul class="footer-links-list">
+              <li><a href="#hero" class="footer-link">Home</a></li>
+              <li><a href="#about" class="footer-link">About Department</a></li>
+              <li><a href="#team" class="footer-link">Forum Team</a></li>
+              <li><a href="#clubs" class="footer-link">Clubs</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 3: Student Wings -->
+          <div>
+            <h4 class="footer-col-title">Events &amp; Faculty</h4>
+            <ul class="footer-links-list">
+              <li><a href="#events" class="footer-link">Upcoming Events</a></li>
+              <li><a href="#gallery" class="footer-link">Event Gallery</a></li>
+              <li><a href="#faculty" class="footer-link">Faculty Leadership</a></li>
+              <li><a href="#contact" class="footer-link">Contact &amp; Connect</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 4: Dispatch -->
+          <div>
+            <h4 class="footer-col-title">Department Gateway</h4>
+            <p style="color: var(--text-secondary); font-size: 0.82rem; line-height: 1.5; font-weight: 400;">
+              Block IV, Floor 3 &bull; Campus Tech Innovation Complex.
+            </p>
+            <p style="color: var(--text-muted); font-size: 0.72rem; margin-top: 0.5rem; font-family: var(--font-mono);">
+              DIRECT INQUIRIES // info@emergicon.edu
+            </p>
+          </div>
+        </div>
+
+        <div class="footer-bottom font-mono">
+          <div>
+            &copy; 2026 EMERGICON &bull; DEPT OF CSE (DATA SCIENCE)
+          </div>
+          <div>
+            COORDINATES: 28.6139&deg; N, 77.2090&deg; E // CAMPUS HUB
+          </div>
+          <button id="back-to-top" class="back-to-top-btn">
+            TOP &uarr;
+          </button>
+        </div>
+      </div>
+    </footer>
+
+  </div><!-- /#app-content -->
+
+  <!-- AI Robot Gesture Guide Assistant Root Container -->
+  <div id="robot-assistant-root"></div>
+
+  <!-- Google MediaPipe Hands & Camera Utils (Client-Side WebGL) -->
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js" crossorigin="anonymous"></script>
+
+  <!-- Libraries: GSAP, ScrollTrigger, Lenis -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+
+  <!-- Application Engine Scripts -->
+  <script src="assets/js/space-canvas.js"></script>
+  <script src="assets/js/logo-explosion.js"></script>
+  <script src="assets/js/sound-engine.js"></script>
+  <script src="assets/js/cursor.js"></script>
+  <script src="assets/js/gesture-engine.js"></script>
+  <script src="assets/js/gallery-carousel.js"></script>
+  <script src="assets/js/team-showcase.js"></script>
+  <script src="assets/js/robot-assistant.js"></script>
+  <script src="assets/js/animations.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
