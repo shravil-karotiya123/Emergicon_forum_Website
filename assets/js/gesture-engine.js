@@ -580,7 +580,7 @@
   function checkTargetLock(x, y) {
     const el = document.elementFromPoint(x, y);
     if (!el) return false;
-    return !!el.closest('a, button, .forum-widget-btn, .club-pinwheel-card, .clubs-focal-hub, .clubs-btn, .carousel-3d-card, .carousel-btn, .carousel-dot, .carousel-view-btn, .carousel-expand-btn, .orbit-card-3d, .co-curved-card, .co-team-card, .orbit-btn, .orbit-dot, .contact-icon-btn, .team-modal-close-btn, .team-modal-btn, .showcase-gallery-card, .showcase-close-btn, #showcase-rsvp-btn, .rsvp-trigger, .back-to-top-btn, select, input, [role="button"]');
+    return !!el.closest('a, button, .forum-widget-btn, .club-pinwheel-card, .clubs-focal-hub, .clubs-btn, .carousel-3d-card, .carousel-btn, .carousel-dot, .carousel-view-btn, .carousel-expand-btn, .orbit-card-3d, .co-3d-card, .co-curved-card, .co-team-card, .co-scroller-btn, .co-scroller-dot, .orbit-btn, .orbit-dot, .contact-icon-btn, .team-modal-close-btn, .team-modal-btn, .showcase-gallery-card, .showcase-close-btn, #showcase-rsvp-btn, .rsvp-trigger, .back-to-top-btn, select, input, [role="button"]');
   }
 
   // --------------------------------------------------------------------------

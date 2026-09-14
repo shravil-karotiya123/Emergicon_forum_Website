@@ -17,6 +17,7 @@
   // --------------------------------------------------------------------------
   
   // 8 Core Team Heads (Official Department Leadership)
+  // 8 Core Team Heads (Official Department Leadership)
   const coreTeamData = [
     {
       id: 'core-1',
@@ -24,9 +25,9 @@
       role: 'President',
       badge: 'Core Leadership',
       designation: 'Executive Forum Lead // CSE (Data Science)',
-      photo: 'assets/images/leader-1.jpg',
-      linkedin: '#',
-      email: 'mailto:president@emergicon.edu',
+      photo: 'assets/images/team/core/Aryan_.png',
+      linkedin: 'https://www.linkedin.com/in/aryan-nagmote-81b910331',
+      email: 'mailto:aryannagmote.ds24@gmail.com',
       bio: 'Leading EMERGICON technical symposiums, research cohorts, and high-performance neural computing initiatives across the department.'
     },
     {
@@ -35,9 +36,9 @@
       role: 'Vice President',
       badge: 'Core Leadership',
       designation: 'Strategic Operations & Academic Affairs',
-      photo: 'assets/images/leader-2.jpg',
-      linkedin: '#',
-      email: 'mailto:vp@emergicon.edu',
+      photo: 'assets/images/team/core/Yashaswini.png',
+      linkedin: 'https://www.linkedin.com/in/yashaswini-kalambe',
+      email: 'mailto:yashaswinikalambe.ds24@sbjit.edu.in',
       bio: 'Coordinating student outreach, academic forum partnerships, and multi-track competitive hackathon schedules.'
     },
     {
@@ -46,9 +47,9 @@
       role: 'Secretary',
       badge: 'Core Leadership',
       designation: 'Council Secretariat & Documentation',
-      photo: 'assets/images/leader-4.jpg',
-      linkedin: '#',
-      email: 'mailto:secretary@emergicon.edu',
+      photo: 'assets/images/team/core/Tanish.png',
+      linkedin: 'https://www.linkedin.com/in/tanish-ghormare',
+      email: 'mailto:tanishghormare.ds24@sbjit.edu.in',
       bio: 'Managing official departmental records, inter-college communiques, resolution charters, and delegate registrations.'
     },
     {
@@ -57,9 +58,9 @@
       role: 'Event Head',
       badge: 'Core Leadership',
       designation: 'Conclave Director & Stage Orchestration',
-      photo: 'assets/images/leader-3.jpg',
-      linkedin: '#',
-      email: 'mailto:events@emergicon.edu',
+      photo: 'assets/images/team/core/Rupali.png',
+      linkedin: 'https://www.linkedin.com/in/rupali-chaudhari-195a02342',
+      email: 'mailto:rupalichaudhari.ds24@sbjit.edu.in',
       bio: 'Spearheading logistical execution, live stage management, keynote schedules, and delegate experiences for 1,400+ participants.'
     },
     {
@@ -68,9 +69,9 @@
       role: 'Treasurer',
       badge: 'Core Leadership',
       designation: 'Fiscal Management & Corporate Sponsorships',
-      photo: 'assets/images/leader-1.jpg',
-      linkedin: '#',
-      email: 'mailto:treasury@emergicon.edu',
+      photo: 'assets/images/team/core/Harsh.png',
+      linkedin: 'https://www.linkedin.com/in/harsh-supekar-100b39333',
+      email: 'mailto:harshsupekar.ds24@sbjit.edu.in',
       bio: 'Overseeing departmental budgets, grant allocations, corporate tier sponsorships, and prize distributions.'
     },
     {
@@ -79,9 +80,9 @@
       role: 'Technical Head',
       badge: 'Core Leadership',
       designation: 'Systems Architecture & Compute Infrastructure',
-      photo: 'assets/images/leader-2.jpg',
-      linkedin: '#',
-      email: 'mailto:tech@emergicon.edu',
+      photo: 'assets/images/team/core/Shravil.png',
+      linkedin: 'https://www.linkedin.com/in/shravil-karotiya',
+      email: 'mailto:shravilkarotiya.ds24@sbjit.edu.in',
       bio: 'Directing GPU compute infrastructure, portal web architectures, AI gesture engines, and hackathon evaluation pipelines.'
     },
     {
@@ -90,9 +91,9 @@
       role: 'Media Head',
       badge: 'Core Leadership',
       designation: 'Visual Identity, Cinematography & Press',
-      photo: 'assets/images/leader-4.jpg',
-      linkedin: '#',
-      email: 'mailto:media@emergicon.edu',
+      photo: 'assets/images/team/core/Ansh.png',
+      linkedin: 'https://www.linkedin.com/in/ansh-meshram-712a03342',
+      email: 'mailto:anshmeshram.ds24@sbjit.edu.in',
       bio: 'Curating the visual narrative, teaser cinematics, livestream engineering, and department editorial publications.'
     },
     {
@@ -101,9 +102,9 @@
       role: 'Sports Head',
       badge: 'Core Leadership',
       designation: 'Athletics, Esports & Tactical Tournaments',
-      photo: 'assets/images/leader-3.jpg',
-      linkedin: '#',
-      email: 'mailto:sports@emergicon.edu',
+      photo: 'assets/images/team/core/Ayush_.png',
+      linkedin: 'https://www.linkedin.com/in/ayush-khade-63b040424/',
+      email: 'mailto:ayushk.ds24d@sbjit.edu.in',
       bio: 'Organizing inter-department athletic meets, annual collegiate esports arenas, and fitness conclaves.'
     }
   ];
@@ -118,9 +119,9 @@
       role: 'Club Head',
       badge: 'Department Chapter // 01',
       tagline: 'Arts, Performing Stage & Creative Expression',
-      photo: 'assets/images/leader-2.jpg',
-      linkedin: '#',
-      email: 'mailto:cultural.club@emergicon.edu',
+      photo: 'assets/images/team/clubs/Palak Photo.png',
+      linkedin: 'https://www.linkedin.com/in/palak-singh-95074141b',
+      email: 'mailto:palaksingh.ds24@sbjit.edu.in',
       bio: 'Fostering expressive cultural performances, annual gala productions, theatrical showcases, and inter-collegiate festivals.'
     },
     {
@@ -131,9 +132,9 @@
       role: 'Club Head',
       badge: 'Department Chapter // 02',
       tagline: 'Visual Arts, Exhibition & Installation Craft',
-      photo: 'assets/images/leader-4.jpg',
-      linkedin: '#',
-      email: 'mailto:art.club@emergicon.edu',
+      photo: 'assets/images/team/clubs/Ayush Wadiyalwar.png',
+      linkedin: 'https://www.linkedin.com/in/aayush-wadiyalwar-b343603a6',
+      email: 'mailto:aayushwadiyalwar.ds24@sbjit.edu.in',
       bio: 'Designing experiential art installations, stage backdrops, creative origami, and exhibition aesthetics.'
     },
     {
@@ -144,9 +145,9 @@
       role: 'Club Head',
       badge: 'Department Chapter // 03',
       tagline: 'Algorithms, Data Structures & ICPC Sprints',
-      photo: 'assets/images/leader-1.jpg',
-      linkedin: '#',
-      email: 'mailto:coding.club@emergicon.edu',
+      photo: 'assets/images/team/clubs/Aryan Hasoriya.png',
+      linkedin: 'https://www.linkedin.com/in/aryan-hasoriya-2694bb424',
+      email: 'mailto:aryanhasoriya.ds24@sbjit.edu.in',
       bio: 'Hosting weekly algorithmic contests, ICPC coaching bootcamps, and high-intensity graph theory problem solving.'
     },
     {
@@ -157,9 +158,9 @@
       role: 'Club Head',
       badge: 'Department Chapter // 04',
       tagline: 'Foundation Models, LLM Agents & Multi-Agent Swarms',
-      photo: 'assets/images/leader-3.jpg',
-      linkedin: '#',
-      email: 'mailto:genai.club@emergicon.edu',
+      photo: 'assets/images/team/clubs/Sujal Photo.png',
+      linkedin: 'https://www.linkedin.com/in/sujal-kawale-5b34a741b',
+      email: 'mailto:sujalk.ds24d@sbjit.edu.in',
       bio: 'Researching autonomous LLM agents, reinforcement learning from human feedback, and generative multi-modal systems.'
     },
     {
@@ -170,9 +171,9 @@
       role: 'Club Head',
       badge: 'Department Chapter // 05',
       tagline: 'Core CS Foundations & National Exam Cohorts',
-      photo: 'assets/images/leader-2.jpg',
-      linkedin: '#',
-      email: 'mailto:gate.club@emergicon.edu',
+      photo: 'assets/images/team/clubs/Nandini Photo.png',
+      linkedin: 'https://www.linkedin.com/in/nandini-kasare-744743377',
+      email: 'mailto:nandinikasare.ds24@sbjit.edu.in',
       bio: 'Mentoring aspirants in Theory of Computation, Operating Systems, Database Internals, and Computer Organization.'
     },
     {
@@ -183,9 +184,9 @@
       role: 'Club Head',
       badge: 'Department Chapter // 06',
       tagline: 'Academic Certifications & Research Foundations',
-      photo: 'assets/images/leader-4.jpg',
-      linkedin: '#',
-      email: 'mailto:nptel.club@emergicon.edu',
+      photo: 'assets/images/team/clubs/Pushkar Photo.png',
+      linkedin: 'https://www.linkedin.com/in/pushkar-karnayake-358a04342',
+      email: 'mailto:pushkarkarnayake.ds24@sbjit.edu.in',
       bio: 'Facilitating advanced IIT/IISc credit certification pathways and research cohort discussion forums.'
     },
     {
@@ -196,9 +197,9 @@
       role: 'Club Head',
       badge: 'Department Chapter // 07',
       tagline: 'Corporate Oratory, Debating & Executive Presence',
-      photo: 'assets/images/leader-1.jpg',
-      linkedin: '#',
-      email: 'mailto:softskills.club@emergicon.edu',
+      photo: 'assets/images/team/clubs/Samyak Photo.png',
+      linkedin: 'https://www.linkedin.com/in/samyak-ukey-57544a342',
+      email: 'mailto:samyakukey.ds24@sbjit.edu.in',
       bio: 'Cultivating leadership eloquence, executive interview preparation, debate summits, and boardroom pitch mastery.'
     },
     {
@@ -209,9 +210,9 @@
       role: 'Club Head',
       badge: 'Department Chapter // 08',
       tagline: 'Event Protocol, Crowd Flow & Council Governance',
-      photo: 'assets/images/leader-3.jpg',
-      linkedin: '#',
-      email: 'mailto:discipline.club@emergicon.edu',
+      photo: 'assets/images/team/clubs/Shivam Photo.png',
+      linkedin: 'https://www.linkedin.com/in/shivam-yerekar-56b802325',
+      email: 'mailto:shivamyerekar.ds24@sbjit.edu.in',
       bio: 'Ensuring seamless symposium protocol, crowd safety logistics, code of conduct, and delegate orientation.'
     },
     {
@@ -222,9 +223,9 @@
       role: 'Club Head',
       badge: 'Department Chapter // 09',
       tagline: 'Embedded Systems, Sensors & Edge Telemetry',
-      photo: 'assets/images/leader-4.jpg',
-      linkedin: '#',
-      email: 'mailto:iot.club@emergicon.edu',
+      photo: 'assets/images/team/clubs/Kalash Photo.png',
+      linkedin: 'https://www.linkedin.com/in/kalash-bamankar-713a03342',
+      email: 'mailto:kalashbamankar.ds24@sbjit.edu.in',
       bio: 'Building embedded sensor arrays, micro-controller networks, edge robotics, and real-time smart campus hardware.'
     },
     {
@@ -235,194 +236,205 @@
       role: 'Club Head',
       badge: 'Department Chapter // 10',
       tagline: 'Design Systems, 3D Renders & Visual Identity',
-      photo: 'assets/images/leader-1.jpg',
-      linkedin: '#',
-      email: 'mailto:design.club@emergicon.edu',
+      photo: 'assets/images/team/clubs/Aryan Nagmote Photo.png',
+      linkedin: 'https://www.linkedin.com/in/aryan-nagmote-81b910331',
+      email: 'mailto:aryannagmote.ds24@gmail.com',
       bio: 'Crafting brand design systems, WebGL digital assets, typographic posters, and visual conference collateral.'
     }
   ];
 
-  // 18 Co-Team Members (Co-Heads)
+  // 18 Co-Team Members (Co-Heads - Synchronized with Department Records)
   const coTeamData = [
+    // Co-Secretary (2 Members)
     {
       id: 'co-1',
-      name: 'Devansh Patil',
-      role: 'Co-Event Lead',
-      track: 'Logistics & Arena',
-      photo: 'assets/images/leader-1.jpg',
-      linkedin: '#',
-      email: 'mailto:co-events1@emergicon.edu',
-      bio: 'Managing real-time hackathon venue deployment and hardware resources.'
+      name: 'Ashwin Shende',
+      role: 'Co-Secretary',
+      track: 'Council Secretariat & Records',
+      photo: 'assets/images/team/coheads/Ashwin.png',
+      linkedin: 'https://www.linkedin.com/in/ashwin-shende-47b295369',
+      email: 'mailto:ashwins.ds25@sbjit.edu.in',
+      bio: 'Managing official departmental records, inter-college communiques, and student council resolutions.'
     },
     {
       id: 'co-2',
-      name: 'Meera Pillai',
-      role: 'Co-Event Lead',
-      track: 'Hospitality & Protocol',
-      photo: 'assets/images/leader-2.jpg',
-      linkedin: '#',
-      email: 'mailto:co-events2@emergicon.edu',
-      bio: 'Facilitating keynote guest welcoming, accommodation, and stage protocol.'
+      name: 'Rashika Dhakate',
+      role: 'Co-Secretary',
+      track: 'Documentation & Communique',
+      photo: 'assets/images/team/coheads/Rashika.png',
+      linkedin: 'https://linkedin.com/in/rashika-dhakate-582741963',
+      email: 'mailto:rashikad.ds25@sbjit.edu.in',
+      bio: 'Coordinating conclave documentation, student delegate charters, and annual department proceedings.'
     },
+
+    // Co-Event Head (2 Members)
     {
       id: 'co-3',
-      name: 'Nikhil Saxena',
-      role: 'Co-Technical Lead',
-      track: 'AI Models & Cloud',
-      photo: 'assets/images/leader-4.jpg',
-      linkedin: '#',
-      email: 'mailto:co-tech1@emergicon.edu',
-      bio: 'Maintaining machine learning evaluation APIs and cloud instances.'
+      name: 'Chinmay Bhojne',
+      role: 'Co-Event Head',
+      track: 'Event Operations & Logistics',
+      photo: 'assets/images/team/coheads/Chinmay.png',
+      linkedin: 'https://www.linkedin.com/in/chinmay-bhojne-085a52373',
+      email: 'mailto:chinmayb.ds25@sbjit.edu.in',
+      bio: 'Managing real-time hackathon venue deployment, audio-visual setups, and stage technical operations.'
     },
     {
       id: 'co-4',
-      name: 'Sneha Roy',
-      role: 'Co-Technical Lead',
-      track: 'Full-Stack Web',
-      photo: 'assets/images/leader-3.jpg',
-      linkedin: '#',
-      email: 'mailto:co-tech2@emergicon.edu',
-      bio: 'Building client-side interactive modules, animations, and registration gateways.'
+      name: 'Parul Wanjari',
+      role: 'Co-Event Head',
+      track: 'Hospitality & Stage Protocol',
+      photo: 'assets/images/team/coheads/Parul.png',
+      linkedin: 'https://www.linkedin.com/in/parul-wanjari-95b602430',
+      email: 'mailto:parulw.ds25@sbjit.edu.in',
+      bio: 'Facilitating keynote guest welcoming, guest speaker hospitality, and auditorium protocol management.'
     },
+
+    // Co-Treasurer (2 Members)
     {
       id: 'co-5',
-      name: 'Arjun Menon',
-      role: 'Co-Media Lead',
-      track: 'Video & Motion Design',
-      photo: 'assets/images/leader-1.jpg',
-      linkedin: '#',
-      email: 'mailto:co-media1@emergicon.edu',
-      bio: 'Directing post-event aftermovies, 3D motion graphics, and live visual feeds.'
+      name: 'Bhumi Prajapati',
+      role: 'Co-Treasurer',
+      track: 'Accounts & Expenditure',
+      photo: 'assets/images/team/coheads/Bhoomi.png',
+      linkedin: 'https://www.linkedin.com/in/bhumi-prajapati-386b6338a',
+      email: 'mailto:bhumip.ds25@sbjit.edu.in',
+      bio: 'Auditing symposium equipment procurement, prize pool ledgers, and operational budgeting.'
     },
     {
       id: 'co-6',
-      name: 'Isha Singhania',
-      role: 'Co-Media Lead',
-      track: 'Photography & Archive',
-      photo: 'assets/images/leader-2.jpg',
-      linkedin: '#',
-      email: 'mailto:co-media2@emergicon.edu',
-      bio: 'Capturing high-resolution photo archives across all seminar halls.'
+      name: 'Sashank Fendar',
+      role: 'Co-Treasurer',
+      track: 'Budgeting & Corporate Grants',
+      photo: 'assets/images/team/coheads/Shashank.jpg',
+      linkedin: 'https://www.linkedin.com/in/shashank-fendar-02450441b/',
+      email: 'mailto:shashankf.ds25@sbjit.edu.in',
+      bio: 'Liaising with enterprise partners for sponsorship deliverables, fiscal accounts, and vendor contracts.'
     },
+
+    // Co-Technical Head (2 Members)
     {
       id: 'co-7',
-      name: 'Varun Reddy',
-      role: 'Co-Treasurer',
-      track: 'Corporate Grants',
-      photo: 'assets/images/leader-4.jpg',
-      linkedin: '#',
-      email: 'mailto:co-treasury1@emergicon.edu',
-      bio: 'Liaising with enterprise partners for sponsorship deliverables.'
+      name: 'Hemraj Verma',
+      role: 'Co-Technical Head',
+      track: 'Systems Architecture & Infrastructure',
+      photo: 'assets/images/team/coheads/Hemraj.png',
+      linkedin: 'https://www.linkedin.com/in/hemraj-varma-3b1540430',
+      email: 'mailto:hemrajv.ds25@sbjit.edu.in',
+      bio: 'Overseeing compute servers, cloud clusters, ML evaluation pipelines, and hardware laboratory testing rigs.'
     },
     {
       id: 'co-8',
-      name: 'Diya Sen',
-      role: 'Co-Treasurer',
-      track: 'Budget & Procurement',
-      photo: 'assets/images/leader-3.jpg',
-      linkedin: '#',
-      email: 'mailto:co-treasury2@emergicon.edu',
-      bio: 'Managing equipment procurement and daily expenditure accounting.'
+      name: 'Aditya Agre',
+      role: 'Co-Technical Head',
+      track: 'Full-Stack & Neural Compute',
+      photo: 'assets/images/team/coheads/Aditya Aagre.png',
+      linkedin: 'https://www.linkedin.com/in/aditya-agre-3a4a40371',
+      email: 'mailto:adityaa.ds25@sbjit.edu.in',
+      bio: 'Building client-side interactive modules, portal architectures, WebGL shaders, and evaluation gateways.'
     },
+
+    // Co-Media Head (6 Members)
     {
       id: 'co-9',
-      name: 'Kabir Mehta',
-      role: 'Co-Secretary',
-      track: 'Public Relations',
-      photo: 'assets/images/leader-1.jpg',
-      linkedin: '#',
-      email: 'mailto:co-sec1@emergicon.edu',
-      bio: 'Publishing department news bulletins and official press communiques.'
+      name: 'Aditya Mohabe',
+      role: 'Co-Media Head',
+      track: 'Cinematography & Visual Production',
+      photo: 'assets/images/team/coheads/Aditya Mohabe.jpg',
+      linkedin: 'https://www.linkedin.com/in/aditya-mohabe-b54992396',
+      email: 'mailto:adityam.ds25@sbjit.edu.in',
+      bio: 'Directing post-event aftermovies, 3D teaser cinematics, and department keynote visual productions.'
     },
     {
       id: 'co-10',
-      name: 'Rhea Chakraborty',
-      role: 'Co-Secretary',
-      track: 'Documentation',
-      photo: 'assets/images/leader-2.jpg',
-      linkedin: '#',
-      email: 'mailto:co-sec2@emergicon.edu',
-      bio: 'Drafting conclave documentation, certificates, and annual reports.'
+      name: 'Nishchay Hasoriya',
+      role: 'Co-Media Head',
+      track: 'Motion Design & Graphics',
+      photo: 'assets/images/team/coheads/Nischay.png',
+      linkedin: 'https://www.linkedin.com/in/nishchay-hasoriya-b64a58430',
+      email: 'mailto:nishchayh.ds25@sbjit.edu.in',
+      bio: 'Creating 3D motion graphics, symposium visual intros, digital banners, and interactive badges.'
     },
     {
       id: 'co-11',
-      name: 'Yashwardhan G.',
-      role: 'Co-Sports Lead',
-      track: 'Esports League',
-      photo: 'assets/images/leader-4.jpg',
-      linkedin: '#',
-      email: 'mailto:co-sports1@emergicon.edu',
-      bio: 'Administering collegiate esports bracket tournaments and server rigs.'
+      name: 'Tejas Chaudhary',
+      role: 'Co-Media Head',
+      track: 'Photography & Digital Archive',
+      photo: 'assets/images/team/coheads/Tejas.png',
+      linkedin: 'https://www.linkedin.com/in/tejas-choudhary-831b93423',
+      email: 'mailto:tejasc.ds25@sbjit.edu.in',
+      bio: 'Capturing high-resolution photo archives, speaker sessions, and hackathon gallery showcases.'
     },
     {
       id: 'co-12',
-      name: 'Anika Kapoor',
-      role: 'Co-Sports Lead',
-      track: 'Outdoor Sports',
-      photo: 'assets/images/leader-3.jpg',
-      linkedin: '#',
-      email: 'mailto:co-sports2@emergicon.edu',
-      bio: 'Organizing inter-batch athletics, football leagues, and fitness rallies.'
+      name: 'Om Thaware',
+      role: 'Co-Media Head',
+      track: 'Livestream & Broadcast Engineering',
+      photo: 'assets/images/team/coheads/Om.png',
+      linkedin: 'https://www.linkedin.com/in/om-thaware-1737023b8',
+      email: 'mailto:omth.ds25@sbjit.edu.in',
+      bio: 'Engineering multi-camera live feeds, webinar broadcasts, and auditorium streaming infrastructure.'
     },
     {
       id: 'co-13',
-      name: 'Siddhant Gupta',
-      role: 'Design Co-Lead',
-      track: 'UI/UX & Identity',
-      photo: 'assets/images/leader-1.jpg',
-      linkedin: '#',
-      email: 'mailto:design@emergicon.edu',
-      bio: 'Crafting the design systems, poster typography, and digital badges.'
+      name: 'Tanishk Morekar',
+      role: 'Co-Media Head',
+      track: 'Public Relations & Press Releases',
+      photo: 'assets/images/team/coheads/Taniksh.png',
+      linkedin: 'https://in.linkedin.com/in/taniksh-undefined-38aa99424',
+      email: 'mailto:tanikshm.ds25@sbjit.edu.in',
+      bio: 'Publishing departmental news bulletins, official press communiques, and social media releases.'
     },
     {
       id: 'co-14',
-      name: 'Trisha Bannerjee',
-      role: 'Outreach Co-Lead',
-      track: 'Inter-College Alliances',
-      photo: 'assets/images/leader-2.jpg',
-      linkedin: '#',
-      email: 'mailto:outreach@emergicon.edu',
-      bio: 'Connecting student delegations from 40+ universities across the state.'
+      name: 'Deepanshu Watkar',
+      role: 'Co-Media Head',
+      track: 'Visual Identity & Branding',
+      photo: 'assets/images/team/coheads/Deepanshu.jpg',
+      linkedin: 'https://www.linkedin.com/in/dipanshu-watkar-64581a430',
+      email: 'mailto:deepanshuw.ds25@sbjit.edu.in',
+      bio: 'Curating brand consistency, typographic hierarchy, and visual design assets across all conclaves.'
     },
+
+    // Co-Sports Head (4 Members)
     {
       id: 'co-15',
-      name: 'Kunal Bhatia',
-      role: 'Logistics Co-Lead',
-      track: 'Hardware Labs',
-      photo: 'assets/images/leader-4.jpg',
-      linkedin: '#',
-      email: 'mailto:logistics@emergicon.edu',
-      bio: 'Coordinating hardware testing kits, power lines, and IoT sensor arrays.'
+      name: 'Dhaeya Zade',
+      role: 'Co-Sports Head',
+      track: 'Athletics & Physical Tournaments',
+      photo: 'assets/images/team/coheads/Dheya_.png',
+      linkedin: 'https://www.linkedin.com/in/dhyeya-zade-92917a368',
+      email: 'mailto:Dhyeyaz.ds25@sbjit.edu.in',
+      bio: 'Organizing inter-department athletic meets, track competitions, football leagues, and fitness rallies.'
     },
     {
       id: 'co-16',
-      name: 'Sanjana Hegde',
-      role: 'Creative Co-Lead',
-      track: 'Exhibition & Art',
-      photo: 'assets/images/leader-3.jpg',
-      linkedin: '#',
-      email: 'mailto:creative@emergicon.edu',
-      bio: 'Designing installation art, entrance lobbies, and tech exhibit displays.'
+      name: 'Parineeta Roy',
+      role: 'Co-Sports Head',
+      track: 'Inter-Departmental Athletics',
+      photo: 'assets/images/leader-2.jpg',
+      linkedin: 'https://www.linkedin.com/in/parineeta-roy-090876430',
+      email: 'mailto:parineetar.ds25@sbjit.edu.in',
+      bio: 'Coordinating female sports contingents, badminton championships, and wellness conclaves.'
     },
     {
       id: 'co-17',
-      name: 'Manish Tiwari',
-      role: 'Operations Co-Lead',
-      track: 'Crowd & Security',
-      photo: 'assets/images/leader-1.jpg',
-      linkedin: '#',
-      email: 'mailto:operations@emergicon.edu',
-      bio: 'Ensuring safe attendee flow, security checks, and auditorium access.'
+      name: 'Bhavesh Kawadran',
+      role: 'Co-Sports Head',
+      track: 'Esports League & Tournament Arenas',
+      photo: 'assets/images/team/coheads/Bhawesh.png',
+      linkedin: 'https://www.linkedin.com/in/bhavesh-kawadkar-824a52410/?skipRedirect=true',
+      email: 'mailto:bhaveshk.ds25@sbjit.edu.in',
+      bio: 'Administering collegiate esports bracket tournaments, gaming server rigs, and LAN competition arenas.'
     },
     {
       id: 'co-18',
-      name: 'Natasha Dsouza',
-      role: 'Workshop Co-Lead',
-      track: 'Technical Cohorts',
-      photo: 'assets/images/leader-2.jpg',
-      linkedin: '#',
-      email: 'mailto:workshops@emergicon.edu',
-      bio: 'Coordinating student mentor sessions, hands-on labs, and speaker Q&As.'
+      name: 'Nisha Bambal',
+      role: 'Co-Sports Head',
+      track: 'Sports Logistics & Coordination',
+      photo: 'assets/images/team/coheads/Nisha.png',
+      linkedin: 'https://www.linkedin.com/in/nisha-bambal-1ba997381',
+      email: 'mailto:nishab.ds25@sbjit.edu.in',
+      bio: 'Managing sports equipment inventories, field scheduling, referee coordination, and tournament fixtures.'
     }
   ];
 
@@ -445,20 +457,19 @@
   let coreOrbitStage = null;
   let coreCardsContainer = null;
   let coreDotsContainer = null;
-  let coCurvedStage = null;
-  let coCurvedTrack = null;
+  let coScrollerStage = null;
+  let coCardsRing = null;
+  let coIndexDisplay = null;
+  let coDotsWrap = null;
   let clubsStage = null;
   let clubsCardsWrap = null;
   let clubsFocalHub = null;
   let teamModal = null;
 
-  // Co-Team Curved Arc Engine Physics State
-  let coScrollOffset = 0;
+  // Co-Team 3D Cylindrical Scroller Physics State
+  let coCurrentOffset = 0;
   let coTargetOffset = 0;
-  const coVelocity = 0.55;
-  let coIsDragging = false;
-  let coStartX = 0;
-  let coLastX = 0;
+  let coAutoTimer = null;
   let coResumeTimeout = null;
   let coIsInteracting = false;
 
@@ -467,7 +478,7 @@
   // --------------------------------------------------------------------------
   document.addEventListener('DOMContentLoaded', () => {
     initCoreTeamOrbit();
-    initCoTeamCurvedArc();
+    initCoTeam3DScroller();
     initClubsCluster();
     initTeamModal();
   });
@@ -726,141 +737,300 @@
   }
 
   // --------------------------------------------------------------------------
-  // 5. CO-TEAM 3D CURVED ARC GALLERY (REFERENCE 02 STYLE)
+  // 5. CO-TEAM 3D CYLINDRICAL HORIZONTAL CARD SCROLLER (REFERENCE INSPIRATION)
   // --------------------------------------------------------------------------
-  function initCoTeamCurvedArc() {
-    coCurvedStage = document.getElementById('co-team-curved-stage');
-    coCurvedTrack = document.getElementById('co-team-curved-track');
-    if (!coCurvedStage || !coCurvedTrack) return;
+  function initCoTeam3DScroller() {
+    coScrollerStage = document.getElementById('co-team-3d-stage');
+    coCardsRing = document.getElementById('co-team-3d-cards-wrap');
+    coIndexDisplay = document.getElementById('co-scroller-index-display');
+    coDotsWrap = document.getElementById('co-scroller-dots');
 
-    const cardsMarkup = coTeamData.map((member) => `
-      <div class="co-curved-card" data-co-id="${member.id}" tabindex="0" role="button" aria-label="View profile of ${member.name}, ${member.role}">
-        <div class="co-card-photo-wrap">
-          <img src="${member.photo}" alt="${member.name}" class="co-card-photo" loading="lazy">
-          
-          <div class="member-contact-overlay" aria-label="Connect with ${member.name}">
-            <a href="${member.linkedin}" target="_blank" rel="noopener noreferrer" class="contact-icon-btn contact-linkedin" title="LinkedIn Profile" onclick="event.stopPropagation();">
-              <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14">
-                <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.25c-.9 0-1.62.72-1.62 1.63 0 .9.72 1.62 1.62 1.62.9 0 1.63-.72 1.63-1.62 0-.91-.73-1.63-1.63Z"/>
-              </svg>
-            </a>
-            <a href="${member.email}" class="contact-icon-btn contact-email" title="Send Email" onclick="event.stopPropagation();">
-              <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14">
-                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/>
-              </svg>
-            </a>
+    if (!coScrollerStage || !coCardsRing) return;
+
+    renderCoScrollerCards();
+    renderCoScrollerDots();
+    setupCoScrollerControls();
+    startCoAutoTimer();
+    requestAnimationFrame(renderCoScrollerLoop);
+  }
+
+  function renderCoScrollerCards() {
+    coCardsRing.innerHTML = coTeamData.map((member, index) => `
+      <div class="co-3d-card ${index === 0 ? 'is-active' : ''}" 
+           data-co-index="${index}" 
+           tabindex="0" 
+           role="button" 
+           aria-label="View profile of ${member.name}, ${member.role}">
+        <div class="co-card-viewport">
+          <div class="co-card-photo-container">
+            <img src="${member.photo}" alt="${member.name}" class="co-card-img" loading="lazy">
+            <div class="co-card-vignette"></div>
+
+            <div class="member-contact-overlay" aria-label="Connect with ${member.name}">
+              <a href="${member.linkedin}" target="_blank" rel="noopener noreferrer" class="contact-icon-btn contact-linkedin" title="LinkedIn Profile" aria-label="LinkedIn" onclick="event.stopPropagation();">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="15" height="15">
+                  <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.25c-.9 0-1.62.72-1.62 1.63 0 .9.72 1.62 1.62 1.62.9 0 1.63-.72 1.63-1.62 0-.91-.73-1.63-1.63Z"/>
+                </svg>
+              </a>
+              <a href="${member.email}" class="contact-icon-btn contact-email" title="Send Email" aria-label="Email" onclick="event.stopPropagation();">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="15" height="15">
+                  <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/>
+                </svg>
+              </a>
+            </div>
           </div>
 
-          <span class="co-role-pill font-mono">${member.role.toUpperCase()}</span>
-        </div>
-        <div class="co-card-info">
-          <h4 class="co-card-name">${member.name}</h4>
-          <span class="co-card-track">${member.track}</span>
+          <div class="co-card-details">
+            <span class="co-card-role-badge font-mono">${member.role.toUpperCase()}</span>
+            <h4 class="co-card-name">${member.name}</h4>
+            <p class="co-card-track font-mono">${member.track}</p>
+          </div>
         </div>
       </div>
     `).join('');
+  }
 
-    coCurvedTrack.innerHTML = cardsMarkup + cardsMarkup;
-
-    coCurvedTrack.addEventListener('click', (e) => {
-      const card = e.target.closest('.co-curved-card');
-      if (!card) return;
-
-      const coId = card.getAttribute('data-co-id');
-      const member = coTeamData.find((m) => m.id === coId);
-      if (member) {
-        openTeamMemberModal(member);
-      }
-    });
-
-    setupCoCurvedControls();
-    requestAnimationFrame(renderCoCurvedLoop);
+  function renderCoScrollerDots() {
+    if (!coDotsWrap) return;
+    coDotsWrap.innerHTML = coTeamData.map((_, i) => `
+      <button class="co-scroller-dot ${i === 0 ? 'active' : ''}" 
+              data-co-dot="${i}" 
+              aria-label="Navigate to ${coTeamData[i].name}">
+      </button>
+    `).join('');
   }
 
   function pauseCoAuto() {
     coIsInteracting = true;
+    stopCoAutoTimer();
     if (coResumeTimeout) clearTimeout(coResumeTimeout);
     coResumeTimeout = setTimeout(() => {
       coIsInteracting = false;
-    }, 6000);
+      startCoAutoTimer();
+    }, 5500);
   }
 
-  function setupCoCurvedControls() {
-    coCurvedStage.addEventListener('pointerdown', (e) => {
-      coIsDragging = true;
-      coStartX = e.clientX;
-      coLastX = e.clientX;
+  function startCoAutoTimer() {
+    stopCoAutoTimer();
+    coAutoTimer = setInterval(() => {
+      if (!coIsInteracting && !isModalOpen) {
+        coTargetOffset = Math.round(coTargetOffset) + 1;
+      }
+    }, 4500);
+  }
+
+  function stopCoAutoTimer() {
+    if (coAutoTimer) clearInterval(coAutoTimer);
+    coAutoTimer = null;
+  }
+
+  function setupCoScrollerControls() {
+    const prevBtn = document.getElementById('co-scroller-prev-btn');
+    const nextBtn = document.getElementById('co-scroller-next-btn');
+
+    if (prevBtn) {
+      prevBtn.addEventListener('click', () => {
+        pauseCoAuto();
+        coTargetOffset = Math.round(coTargetOffset) - 1;
+      });
+    }
+
+    if (nextBtn) {
+      nextBtn.addEventListener('click', () => {
+        pauseCoAuto();
+        coTargetOffset = Math.round(coTargetOffset) + 1;
+      });
+    }
+
+    if (coDotsWrap) {
+      coDotsWrap.addEventListener('click', (e) => {
+        const dot = e.target.closest('[data-co-dot]');
+        if (dot) {
+          pauseCoAuto();
+          const targetIdx = parseInt(dot.getAttribute('data-co-dot'), 10);
+          const total = coTeamData.length;
+          const currentNorm = ((Math.round(coTargetOffset) % total) + total) % total;
+          let diff = targetIdx - currentNorm;
+          if (diff > total / 2) diff -= total;
+          if (diff < -total / 2) diff += total;
+          coTargetOffset = Math.round(coTargetOffset) + diff;
+        }
+      });
+    }
+
+    // Interactive Card Click Handling
+    coCardsRing.addEventListener('click', (e) => {
+      const card = e.target.closest('.co-3d-card');
+      if (!card) return;
+
+      const idx = parseInt(card.getAttribute('data-co-index'), 10);
+      const total = coTeamData.length;
+      let diff = (idx - coCurrentOffset) % total;
+      if (diff > total / 2) diff -= total;
+      if (diff < -total / 2) diff += total;
+
       pauseCoAuto();
-      coCurvedStage.classList.add('is-dragging');
+
+      if (Math.abs(diff) < 0.38) {
+        // Active center card clicked -> open details modal
+        openTeamMemberModal(coTeamData[idx]);
+      } else {
+        // Side card clicked -> smoothly fly to center and activate
+        coTargetOffset = Math.round(coCurrentOffset + diff);
+      }
+    });
+
+    // Pointer Drag Physics with Inertia
+    let isDragging = false;
+    let startX = 0;
+    let lastX = 0;
+    let lastTime = 0;
+    let velocityX = 0;
+
+    coScrollerStage.addEventListener('pointerdown', (e) => {
+      isDragging = true;
+      startX = e.clientX;
+      lastX = e.clientX;
+      lastTime = performance.now();
+      velocityX = 0;
+      pauseCoAuto();
+      coScrollerStage.classList.add('is-dragging');
     });
 
     window.addEventListener('pointermove', (e) => {
-      if (!coIsDragging) return;
-      const deltaX = e.clientX - coLastX;
-      coLastX = e.clientX;
-      coTargetOffset += deltaX * 1.5;
+      if (!isDragging) return;
+      const now = performance.now();
+      const dt = Math.max(1, now - lastTime);
+      const dx = e.clientX - lastX;
+      velocityX = dx / dt;
+      lastX = e.clientX;
+      lastTime = now;
+
+      const sensitivity = window.innerWidth <= 768 ? 160 : 250;
+      coTargetOffset -= (dx / sensitivity);
+      coCurrentOffset = coTargetOffset; // direct responsiveness
     });
 
     window.addEventListener('pointerup', () => {
-      if (coIsDragging) {
-        coIsDragging = false;
-        if (coCurvedStage) coCurvedStage.classList.remove('is-dragging');
+      if (!isDragging) return;
+      isDragging = false;
+      coScrollerStage.classList.remove('is-dragging');
+
+      // Add fling inertia
+      if (Math.abs(velocityX) > 0.15) {
+        coTargetOffset -= velocityX * 7.5;
       }
+      // Settle smoothly on the nearest integer card
+      coTargetOffset = Math.round(coTargetOffset);
     });
 
-    coCurvedStage.addEventListener('wheel', (e) => {
-      if (Math.abs(e.deltaX) > Math.abs(e.deltaY)) {
+    // Mouse Wheel Support (Horizontal or Shift+Vertical or DeltaX)
+    coScrollerStage.addEventListener('wheel', (e) => {
+      const delta = Math.abs(e.deltaX) > Math.abs(e.deltaY) ? e.deltaX : e.deltaY;
+      if (Math.abs(delta) > 15) {
         e.preventDefault();
         pauseCoAuto();
-        coTargetOffset -= e.deltaX * 1.2;
+        const dir = delta > 0 ? 1 : -1;
+        coTargetOffset = Math.round(coTargetOffset) + dir;
       }
     }, { passive: false });
 
-    coCurvedStage.addEventListener('mouseenter', () => {
+    // Keyboard Arrow Navigation
+    coScrollerStage.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowRight') {
+        e.preventDefault();
+        pauseCoAuto();
+        coTargetOffset = Math.round(coTargetOffset) + 1;
+      } else if (e.key === 'ArrowLeft') {
+        e.preventDefault();
+        pauseCoAuto();
+        coTargetOffset = Math.round(coTargetOffset) - 1;
+      } else if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        const total = coTeamData.length;
+        const activeIdx = ((Math.round(coTargetOffset) % total) + total) % total;
+        openTeamMemberModal(coTeamData[activeIdx]);
+      }
+    });
+
+    // Hover pauses auto-scroll
+    coScrollerStage.addEventListener('mouseenter', () => {
       pauseCoAuto();
     });
   }
 
-  function renderCoCurvedLoop() {
-    if (!coCurvedTrack || !coCurvedStage) return;
+  function renderCoScrollerLoop() {
+    if (!coScrollerStage || !coCardsRing) return;
 
-    if (!coIsInteracting && !coIsDragging && !isModalOpen) {
-      coTargetOffset -= coVelocity;
+    // Smooth Lerp Spring Interpolation
+    coCurrentOffset += (coTargetOffset - coCurrentOffset) * 0.12;
+
+    const cards = coCardsRing.querySelectorAll('.co-3d-card');
+    const total = coTeamData.length;
+    const isMobile = window.innerWidth <= 768;
+    const isTablet = window.innerWidth <= 1024 && !isMobile;
+
+    const normActiveIndex = ((Math.round(coCurrentOffset) % total) + total) % total;
+
+    // Update active index indicator
+    if (coIndexDisplay) {
+      const displayNum = String(normActiveIndex + 1).padStart(2, '0');
+      coIndexDisplay.textContent = `${displayNum} // ${String(total).padStart(2, '0')}`;
     }
 
-    coScrollOffset += (coTargetOffset - coScrollOffset) * 0.1;
-
-    const cards = coCurvedTrack.querySelectorAll('.co-curved-card');
-    const cardWidth = 240;
-    const totalTrackWidth = (coTeamData.length) * cardWidth;
-    const stageWidth = coCurvedStage.clientWidth || window.innerWidth;
-    const stageCenter = stageWidth / 2;
-
-    if (coScrollOffset < -totalTrackWidth) {
-      coScrollOffset += totalTrackWidth;
-      coTargetOffset += totalTrackWidth;
-    } else if (coScrollOffset > 0) {
-      coScrollOffset -= totalTrackWidth;
-      coTargetOffset -= totalTrackWidth;
+    // Update dots indicator
+    if (coDotsWrap) {
+      const dots = coDotsWrap.querySelectorAll('.co-scroller-dot');
+      dots.forEach((dot, i) => {
+        dot.classList.toggle('active', i === normActiveIndex);
+      });
     }
 
+    // Position each card on the 3D Cylindrical Arc
     cards.forEach((card, index) => {
-      const baseX = (index * cardWidth) + coScrollOffset;
-      const cardCenter = baseX + (cardWidth / 2);
-      const distFromCenter = (cardCenter - stageCenter) / (stageWidth * 0.55);
-      const absDist = Math.abs(distFromCenter);
+      let diff = (index - coCurrentOffset) % total;
+      if (diff > total / 2) diff -= total;
+      if (diff < -total / 2) diff += total;
 
-      const curveDepthZ = -Math.pow(absDist, 1.8) * 160;
-      const rotateY = -distFromCenter * 24;
-      const scale = Math.max(0.65, 1 - Math.pow(absDist, 1.2) * 0.28);
-      const opacity = Math.max(0.2, 1 - Math.pow(absDist, 1.5) * 0.55);
+      const absDiff = Math.abs(diff);
 
-      card.style.transform = `translate3d(${baseX.toFixed(1)}px, 0px, ${curveDepthZ.toFixed(1)}px) rotateY(${rotateY.toFixed(1)}deg) scale(${scale.toFixed(3)})`;
+      // Performance cull cards outside panoramic field of view
+      if (absDiff > 5.2) {
+        card.style.opacity = '0';
+        card.style.visibility = 'hidden';
+        card.style.pointerEvents = 'none';
+        return;
+      }
+
+      card.style.visibility = 'visible';
+      card.style.pointerEvents = 'auto';
+
+      // Cylindrical Arc Trigonometry with enhanced visibility & panoramic spread
+      const angle = diff * (isMobile ? 0.30 : (isTablet ? 0.24 : 0.20));
+      const radius = isMobile ? 320 : (isTablet ? 520 : 680);
+      const x = Math.sin(angle) * radius;
+      const z = (Math.cos(angle) - 1) * radius * 0.85;
+      const rotateY = -diff * (isMobile ? 12 : (isTablet ? 14 : 16));
+      const scale = Math.max(0.68, 1.05 - absDiff * (isMobile ? 0.12 : 0.085));
+      const opacity = Math.max(0, 1.0 - absDiff * 0.14);
+      const brightness = Math.max(0.65, 1.02 - absDiff * 0.09);
+      const zIndex = Math.round(100 - absDiff * 12);
+
+      card.style.transform = `translate3d(${x.toFixed(1)}px, 0px, ${z.toFixed(1)}px) rotateY(${rotateY.toFixed(1)}deg) scale(${scale.toFixed(3)})`;
       card.style.opacity = opacity.toFixed(2);
-      card.style.zIndex = Math.round(100 - absDist * 50);
+      card.style.filter = `brightness(${brightness.toFixed(2)})`;
+      card.style.zIndex = zIndex;
+
+      if (absDiff < 0.42) {
+        card.classList.add('is-active');
+        card.setAttribute('aria-hidden', 'false');
+      } else {
+        card.classList.remove('is-active');
+        card.setAttribute('aria-hidden', 'true');
+      }
     });
 
-    requestAnimationFrame(renderCoCurvedLoop);
+    requestAnimationFrame(renderCoScrollerLoop);
   }
 
   // --------------------------------------------------------------------------

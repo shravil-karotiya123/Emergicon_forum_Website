@@ -258,21 +258,55 @@
           </div>
         </div>
 
-        <!-- HIERARCHY LEVEL 02: CO-TEAM (18 CO-HEADS) 3D CURVED ARC GALLERY -->
-        <div class="team-hierarchy-block" style="margin-bottom: 1rem;">
-          <div class="team-hierarchy-title-wrap">
-            <div class="team-hierarchy-heading">
-              <span>// 02. CO-TEAM EXECUTIVES</span>
-            </div>
-            <span class="team-count-badge">18 CO-HEADS // CURVED 3D GALLERY</span>
+        <!-- HIERARCHY LEVEL 02: CO-TEAM (18 CO-HEADS) 3D CYLINDRICAL CARD SCROLLER -->
+        <div class="team-hierarchy-block co-scroller-hierarchy-block" id="co-team-hierarchy-block">
+          <div class="co-scroller-header-wrap">
+            <div class="section-tag font-mono">// 02. CO-TEAM EXECUTIVES</div>
+            <h3 class="co-scroller-title">CO-TEAM</h3>
+            <p class="co-scroller-subtitle">Co-Heads &mdash; Department of CSE (Data Science)</p>
+            <div class="team-count-badge font-mono">18 CO-HEADS // 3D CYLINDRICAL HORIZONTAL SCROLLER</div>
           </div>
 
-          <!-- 3D Flowing Curved Arc Showcase -->
-          <div class="co-team-curved-section">
-            <div id="co-team-curved-stage" class="co-team-curved-stage" tabindex="0" aria-label="3D Curved Arc Co-Team Gallery">
-              <div id="co-team-curved-track" class="co-team-curved-track">
+          <!-- 3D Cylindrical Horizontal Card Scroller (Inspired by Reference Design) -->
+          <div class="co-scroller-3d-wrapper">
+            <!-- Atmospheric Space Backdrop Elements -->
+            <div class="co-scroller-backdrop-layer" aria-hidden="true">
+              <div class="co-space-nebula-glow"></div>
+              <div class="co-space-data-grid"></div>
+              <div class="co-space-neural-lines"></div>
+              <!-- Floating Official EMERGICON Logos -->
+              <div class="co-floating-logo logo-pos-left">
+                <img src="assets/images/logo.png" alt="" class="co-logo-watermark">
+              </div>
+              <div class="co-floating-logo logo-pos-right">
+                <img src="assets/images/logo.png" alt="" class="co-logo-watermark">
+              </div>
+            </div>
+
+            <!-- 3D Curved Viewport Stage -->
+            <div id="co-team-3d-stage" class="co-scroller-3d-stage" tabindex="0" role="region" aria-label="3D Horizontal Co-Team Member Scroller">
+              <!-- 3D Positioned Cards Ring -->
+              <div id="co-team-3d-cards-wrap" class="co-scroller-cards-ring">
                 <!-- Dynamically Injected by team-showcase.js -->
               </div>
+            </div>
+
+            <!-- Navigation Controls & Dynamic Pagination -->
+            <div class="co-scroller-controls-row">
+              <button id="co-scroller-prev-btn" class="co-scroller-btn" aria-label="Previous Co-Team Member">&larr;</button>
+              <div class="co-scroller-indicator-box">
+                <span id="co-scroller-index-display" class="co-scroller-idx font-mono">01 // 18</span>
+                <div id="co-scroller-dots" class="co-scroller-dots"></div>
+              </div>
+              <button id="co-scroller-next-btn" class="co-scroller-btn" aria-label="Next Co-Team Member">&rarr;</button>
+            </div>
+
+            <div class="carousel-instruction-pill font-mono">
+              <span>DRAG / SWIPE HORIZONTALLY</span>
+              <span>&bull;</span>
+              <span>&larr; &rarr; ARROWS</span>
+              <span>&bull;</span>
+              <span>CLICK SIDE CARD TO CENTER</span>
             </div>
           </div>
         </div>

@@ -300,29 +300,39 @@
     playUiClick(1400, 0.04);
   }
 
-  // Section Observer for #team
+  // Section Observer for #team and #clubs
+  const activeSections = new Set();
+
   function setupForumObserver() {
     const teamSection = document.getElementById('team');
-    if (!teamSection) return;
+    const clubsSection = document.getElementById('clubs');
 
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          isForumIntersecting = true;
-          if (!isForumMuted && !isForumPaused) {
-            fadeInSoundtrack();
-          }
+          activeSections.add(entry.target.id);
         } else {
-          isForumIntersecting = false;
-          fadeOutSoundtrack();
+          activeSections.delete(entry.target.id);
         }
-        updateForumWidgetUI();
       });
+
+      const isAnyActive = activeSections.size > 0;
+      if (isAnyActive) {
+        isForumIntersecting = true;
+        if (!isForumMuted && !isForumPaused) {
+          fadeInSoundtrack();
+        }
+      } else {
+        isForumIntersecting = false;
+        fadeOutSoundtrack();
+      }
+      updateForumWidgetUI();
     }, {
       threshold: [0.05, 0.25, 0.5]
     });
 
-    observer.observe(teamSection);
+    if (teamSection) observer.observe(teamSection);
+    if (clubsSection) observer.observe(clubsSection);
   }
 
   // Transparent First-Touch Autoplay Unlock
@@ -352,97 +362,108 @@
   // Update Visual Indicators & Active Card Pulsing
   function setForumVisualState(isPlaying) {
     const teamSection = document.getElementById('team');
-    const widget = document.getElementById('forum-audio-widget');
+    const clubsSection = document.getElementById('clubs');
+    const widgets = document.querySelectorAll('.forum-audio-widget');
 
     if (teamSection) {
       teamSection.classList.toggle('audio-active-section', isPlaying);
     }
-
-    if (widget) {
-      widget.classList.toggle('is-playing', isPlaying);
+    if (clubsSection) {
+      clubsSection.classList.toggle('audio-active-section', isPlaying);
     }
+
+    widgets.forEach((widget) => {
+      widget.classList.toggle('is-playing', isPlaying);
+    });
   }
 
-  // Render Minimalist Audio Widget in Section 02
+  // Render Minimalist Audio Widget in Section 02 (#team) and Section 03 (#clubs)
   function renderForumAudioWidget() {
-    const teamHeader = document.querySelector('#team .section-header-editorial');
-    if (!teamHeader || document.getElementById('forum-audio-widget')) return;
+    const headers = [
+      { el: document.querySelector('#team .section-header-editorial'), id: 'forum-audio-widget', tag: '// FORUM SOUNDTRACK' },
+      { el: document.querySelector('#clubs .section-header-editorial'), id: 'clubs-audio-widget', tag: '// CLUBS SOUNDTRACK' }
+    ];
 
-    const widget = document.createElement('div');
-    widget.id = 'forum-audio-widget';
-    widget.className = 'forum-audio-widget';
-    widget.setAttribute('aria-label', 'Forum Team Soundtrack Controls');
-    widget.innerHTML = `
-      <div class="forum-eq-container" title="Audio Soundtrack Telemetry">
-        <span class="forum-eq-bar bar-1"></span>
-        <span class="forum-eq-bar bar-2"></span>
-        <span class="forum-eq-bar bar-3"></span>
-        <span class="forum-eq-bar bar-4"></span>
-      </div>
-      <div class="forum-audio-label-box">
-        <span class="forum-audio-tag font-mono">// FORUM SOUNDTRACK</span>
-        <span id="forum-audio-status-text" class="forum-audio-status font-mono">TRACK // LIVE</span>
-      </div>
-      <div class="forum-audio-actions">
-        <button id="forum-audio-mute-btn" class="forum-widget-btn" aria-label="Mute Soundtrack" title="Mute / Unmute">
-          <svg id="forum-mute-icon" viewBox="0 0 24 24" fill="currentColor" width="14" height="14">
-            <path d="M14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77zm-2.5 9.77H8v-2h3.5l4-4v12l-4-4z"/>
-          </svg>
-        </button>
-        <button id="forum-audio-pause-btn" class="forum-widget-btn" aria-label="Pause Soundtrack" title="Pause / Resume">
-          <svg id="forum-pause-icon" viewBox="0 0 24 24" fill="currentColor" width="14" height="14">
-            <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
-          </svg>
-        </button>
-      </div>
-    `;
+    headers.forEach(({ el, id, tag }) => {
+      if (!el || document.getElementById(id)) return;
 
-    teamHeader.appendChild(widget);
+      const widget = document.createElement('div');
+      widget.id = id;
+      widget.className = 'forum-audio-widget';
+      widget.setAttribute('aria-label', 'Soundtrack Controls');
+      widget.innerHTML = `
+        <div class="forum-eq-container" title="Audio Soundtrack Telemetry">
+          <span class="forum-eq-bar bar-1"></span>
+          <span class="forum-eq-bar bar-2"></span>
+          <span class="forum-eq-bar bar-3"></span>
+          <span class="forum-eq-bar bar-4"></span>
+        </div>
+        <div class="forum-audio-label-box">
+          <span class="forum-audio-tag font-mono">${tag}</span>
+          <span class="forum-audio-status font-mono">TRACK // LIVE</span>
+        </div>
+        <div class="forum-audio-actions">
+          <button class="forum-widget-btn forum-mute-btn" aria-label="Mute Soundtrack" title="Mute / Unmute">
+            <svg class="forum-mute-icon" viewBox="0 0 24 24" fill="currentColor" width="14" height="14">
+              <path d="M14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77zm-2.5 9.77H8v-2h3.5l4-4v12l-4-4z"/>
+            </svg>
+          </button>
+          <button class="forum-widget-btn forum-pause-btn" aria-label="Pause Soundtrack" title="Pause / Resume">
+            <svg class="forum-pause-icon" viewBox="0 0 24 24" fill="currentColor" width="14" height="14">
+              <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
+            </svg>
+          </button>
+        </div>
+      `;
 
-    // Bind Controls
-    const muteBtn = document.getElementById('forum-audio-mute-btn');
-    const pauseBtn = document.getElementById('forum-audio-pause-btn');
+      el.appendChild(widget);
 
-    if (muteBtn) muteBtn.addEventListener('click', toggleForumMute);
-    if (pauseBtn) pauseBtn.addEventListener('click', toggleForumPause);
+      const muteBtn = widget.querySelector('.forum-mute-btn');
+      const pauseBtn = widget.querySelector('.forum-pause-btn');
+
+      if (muteBtn) muteBtn.addEventListener('click', toggleForumMute);
+      if (pauseBtn) pauseBtn.addEventListener('click', toggleForumPause);
+    });
   }
 
   function updateForumWidgetUI() {
-    const statusText = document.getElementById('forum-audio-status-text');
-    const muteBtn = document.getElementById('forum-audio-mute-btn');
-    const pauseBtn = document.getElementById('forum-audio-pause-btn');
-    const widget = document.getElementById('forum-audio-widget');
+    const widgets = document.querySelectorAll('.forum-audio-widget');
+    if (!widgets.length) return;
 
-    if (!widget) return;
+    widgets.forEach((widget) => {
+      const statusText = widget.querySelector('.forum-audio-status');
+      const muteBtn = widget.querySelector('.forum-mute-btn');
+      const pauseBtn = widget.querySelector('.forum-pause-btn');
 
-    if (isForumMuted) {
-      if (statusText) statusText.textContent = 'MUTED';
-      if (muteBtn) {
-        muteBtn.classList.add('active');
-        muteBtn.innerHTML = `
-          <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14">
-            <path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3 3 4.27l4.73 4.73H4v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4 9.91 6.09 12 8.18V4z"/>
-          </svg>
-        `;
+      if (isForumMuted) {
+        if (statusText) statusText.textContent = 'MUTED';
+        if (muteBtn) {
+          muteBtn.classList.add('active');
+          muteBtn.innerHTML = `
+            <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14">
+              <path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3 3 4.27l4.73 4.73H4v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4 9.91 6.09 12 8.18V4z"/>
+            </svg>
+          `;
+        }
+      } else {
+        if (statusText) statusText.textContent = isForumPaused ? 'PAUSED' : (isForumIntersecting ? 'TRACK // LIVE' : 'STANDBY');
+        if (muteBtn) {
+          muteBtn.classList.remove('active');
+          muteBtn.innerHTML = `
+            <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14">
+              <path d="M14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77zm-2.5 9.77H8v-2h3.5l4-4v12l-4-4z"/>
+            </svg>
+          `;
+        }
       }
-    } else {
-      if (statusText) statusText.textContent = isForumPaused ? 'PAUSED' : (isForumIntersecting ? 'TRACK // LIVE' : 'STANDBY');
-      if (muteBtn) {
-        muteBtn.classList.remove('active');
-        muteBtn.innerHTML = `
-          <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14">
-            <path d="M14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77zm-2.5 9.77H8v-2h3.5l4-4v12l-4-4z"/>
-          </svg>
-        `;
-      }
-    }
 
-    if (pauseBtn) {
-      pauseBtn.classList.toggle('active', isForumPaused);
-      pauseBtn.innerHTML = isForumPaused
-        ? `<svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M8 5v14l11-7z"/></svg>`
-        : `<svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>`;
-    }
+      if (pauseBtn) {
+        pauseBtn.classList.toggle('active', isForumPaused);
+        pauseBtn.innerHTML = isForumPaused
+          ? `<svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M8 5v14l11-7z"/></svg>`
+          : `<svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>`;
+      }
+    });
   }
 
   // --------------------------------------------------------------------------

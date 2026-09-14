@@ -15,145 +15,237 @@
   'use strict';
 
   // --------------------------------------------------------------------------
-  // 1. EXTENSIBLE EVENT DATASET WITH DEDICATED MULTI-PHOTO GALLERIES
+  // 1. EXTENSIBLE EVENT DATASET WITH REAL DEPARTMENT EVENTS & MULTI-PHOTO GALLERIES
   // --------------------------------------------------------------------------
   const galleryEventsData = [
     {
-      id: 'hackathon-arena',
-      title: 'National Hackathon Arena',
-      tag: 'HACKATHON SPRINT',
-      date: 'OCTOBER 24–26, 2026',
-      venue: 'AUDITORIUM ALPHA & LAB CLUSTER',
+      id: 'sih-hackathon-2026',
+      title: 'Smart India Hackathon (SIH) 2026',
+      tag: 'NATIONAL QUALIFIER',
+      date: 'SEPTEMBER 01, 2026',
+      venue: 'DEPARTMENT LAB SUITE & AUDITORIUM',
+      organizingTeam: 'EMERGICON Technical Council & SIH Chapter',
+      image: 'assets/images/events/SIH Internal Hackathon 2026/20260901_12516PMByGPSMapCamera.jpg',
+      shortDescription: 'Department-wide Smart India Hackathon internal scrutiny and continuous prototype build sprint.',
+      fullDescription: 'The SIH Internal Hackathon 2026 convened over 40 multidisciplinary student engineering teams from the Department of CSE (Data Science) to architect and pitch high-impact solutions for national problem statements. Student cohorts defended live working prototypes before an expert evaluation jury of senior faculty and industry mentors.',
+      stats: [
+        { label: 'Participating Teams', value: '42 Teams' },
+        { label: 'Sprint Duration', value: '24 Hours' },
+        { label: 'Shortlisted Finalists', value: '06 Teams' },
+        { label: 'Evaluation Panels', value: '04 Expert Juries' }
+      ],
+      galleryImages: [
+        { src: 'assets/images/events/SIH Internal Hackathon 2026/20260901_12516PMByGPSMapCamera.jpg', title: 'Hackathon Build Floor', caption: 'Teams assembling neural pipelines and full-stack prototypes.' },
+        { src: 'assets/images/events/SIH Internal Hackathon 2026/20260901_124612PMByGPSMapCamera.jpg', title: 'Live Prototype Demonstrations', caption: 'Student teams presenting real-time system architectures to faculty.' },
+        { src: 'assets/images/events/SIH Internal Hackathon 2026/20260901_125300PMByGPSMapCamera.jpg', title: 'Jury Evaluation & Scrutiny', caption: 'Panel of judges evaluating algorithmic accuracy and scalability.' },
+        { src: 'assets/images/events/SIH Internal Hackathon 2026/20260901_124746PMByGPSMapCamera.jpg', title: 'Sprint Collaboration', caption: 'Continuous coding and edge hardware integration in progress.' }
+      ]
+    },
+    {
+      id: 'ideathon-hackathon',
+      title: 'Department Ideathon & Hackathon',
+      tag: 'INNOVATION SPRINT',
+      date: 'AUGUST 17, 2026',
+      venue: 'INNOVATION & INCUBATION LAB',
       organizingTeam: 'Coding & Algorithms Club × AI/ML Chapter',
-      image: 'assets/images/hackathon.jpg',
-      shortDescription: '36-hour non-stop continuous build sprint deploying production deep learning models and distributed streaming pipelines.',
-      fullDescription: 'The EMERGICON National Data Hackathon brings together over 180 premier collegiate engineering teams to build, benchmark, and deploy mission-critical machine learning applications. Participants leverage dedicated high-density GPU computing clusters with direct technical mentorship from senior Silicon Valley research engineers, tackling complex challenges in foundation model fine-tuning, autonomous robotics perception, and real-time fraud inference.',
+      image: 'assets/images/events/Ideathon and Hackathon/ideathon_pitch_team.jpg',
+      shortDescription: 'Rapid ideation, system design pitches, and prototype sprints tackling real-world problem statements.',
+      fullDescription: 'A premier departmental convergence of ideation and rapid software engineering where students pitched novel architectural concepts and validated minimum viable products. The conclave emphasized algorithmic scalability, data privacy frameworks, and intuitive user experiences.',
       stats: [
-        { label: 'Participating Teams', value: '180+' },
-        { label: 'Prize Pool', value: '₹2,50,000' },
-        { label: 'Continuous Sprint', value: '36 Hours' },
-        { label: 'Compute Power', value: 'NVIDIA A100' }
+        { label: 'Project Pitches', value: '35+ Projects' },
+        { label: 'Award Grants', value: '₹50,000' },
+        { label: 'Mentorship Rounds', value: '12 Sessions' },
+        { label: 'Student Delegates', value: '140+ Attendees' }
       ],
       galleryImages: [
-        { src: 'assets/images/hackathon.jpg', title: 'Main Arena Build Floor', caption: 'Teams assembling initial neural pipeline architectures during hour 12.' },
-        { src: 'assets/images/keynote.jpg', title: 'Midnight Architectural Review', caption: 'Senior mentors evaluating distributed Kafka pipelines and model accuracy.' },
-        { src: 'assets/images/aerospace.jpg', title: 'High-Density GPU Rig Floor', caption: 'Supercomputing cluster under continuous high-load transformer training.' },
-        { src: 'assets/images/gala.jpg', title: 'Grand Finale Showcase', caption: 'Top 10 finalist teams presenting production-grade prototypes on stage.' }
+        { src: 'assets/images/events/Ideathon and Hackathon/ideathon_pitch_team.jpg', title: 'Tech Titans Project Presentation', caption: 'Student cohort defending their "Nagpur Future Simulator" architectural model before the jury.' },
+        { src: 'assets/images/events/Ideathon and Hackathon/ideathon_screen_focus.jpg', title: 'Interactive Simulator Pitch', caption: 'Lead presenter detailing the data pipeline schema and system UI.' },
+        { src: 'assets/images/events/Ideathon and Hackathon/20260817_53333PMByGPSMapCamera.jpg', title: 'Jury Diligence & Q&A', caption: 'Technical jury cross-examining candidate architecture diagrams.' },
+        { src: 'assets/images/events/Ideathon and Hackathon/20260817_51633PMByGPSMapCamera.jpg', title: 'Main Innovation Pitch Stage', caption: 'Student founders pitching data science and AI applications.' }
       ]
     },
     {
-      id: 'keynote-stage',
-      title: 'Annual Keynote Stage',
-      tag: 'THOUGHT LEADERSHIP',
-      date: 'NOVEMBER 14, 2026',
-      venue: 'MAIN AMPHITHEATRE',
-      organizingTeam: 'Department Faculty Council & Forum Executives',
-      image: 'assets/images/keynote.jpg',
-      shortDescription: 'Keynote addresses and visionary discussions on foundation models, AI safety governance, and next-generation compute architectures.',
-      fullDescription: 'The Annual Department Keynote Stage serves as an intellectual nexus for academicians, doctoral researchers, and industry pioneers. Featuring keynote addresses from ACM/IEEE Fellows and leading laboratory directors, the conclave explores mathematical advances in transformer self-attention mechanisms, synthetic data fidelity, and the ethical engineering of safe artificial intelligence.',
+      id: 'hackathon-3rd-year',
+      title: '3rd Year Technical Hackathon',
+      tag: 'CODE CONCLAVE',
+      date: 'AUGUST 08, 2026',
+      venue: 'CSE (DS) ADVANCED LAB CLUSTER',
+      organizingTeam: '3rd Year Department Cohort & Forum Leads',
+      image: 'assets/images/events/Hackathon 3rd Year/20260808_25950PMByGPSMapCamera.jpg',
+      shortDescription: 'Intensive 12-hour full-stack and machine learning coding sprint designed for 3rd-year engineering students.',
+      fullDescription: 'An exclusive departmental coding marathon challenging 3rd-year undergraduates to architect end-to-end data science pipelines, computer vision tools, and web applications. Focus areas included distributed data ingestion, cloud deployment, and microservices architecture.',
       stats: [
-        { label: 'Keynote Speakers', value: '12 Global Leads' },
-        { label: 'Delegates Attended', value: '1,400+' },
-        { label: 'Research Papers', value: '28 Selected' },
-        { label: 'Live Stream Reach', value: '15,000+' }
+        { label: 'Competing Teams', value: '28 Teams' },
+        { label: 'Sprint Duration', value: '12 Hours' },
+        { label: 'Mentors Active', value: '10 Mentors' },
+        { label: 'Final Laureates', value: 'Top 3 Podium' }
       ],
       galleryImages: [
-        { src: 'assets/images/keynote.jpg', title: 'Inaugural Address', caption: 'Keynote discourse on multi-modal foundation models and sparse attention.' },
-        { src: 'assets/images/gala.jpg', title: 'Distinguished Panel', caption: 'Silicon Valley research directors debating AI safety frameworks.' },
-        { src: 'assets/images/venture.jpg', title: 'Poster Session Hall', caption: 'Undergraduate researchers presenting peer-reviewed empirical findings.' },
-        { src: 'assets/images/hackathon.jpg', title: 'Interactive Fireside Chat', caption: 'Student Q&A session with leading computer science academicians.' }
+        { src: 'assets/images/events/Hackathon 3rd Year/20260808_25950PMByGPSMapCamera.jpg', title: 'Computing Lab Sprint Arena', caption: '3rd-year engineering cohorts in active code sprint mode.' },
+        { src: 'assets/images/events/Hackathon 3rd Year/20260808_25941PMByGPSMapCamera.jpg', title: 'Architecture Review', caption: 'Senior peer mentors reviewing repository git commits and code.' },
+        { src: 'assets/images/events/Hackathon 3rd Year/20260808_25954PMByGPSMapCamera.jpg', title: 'Live Software Deployment', caption: 'Teams benchmarking real-time inference latency.' },
+        { src: 'assets/images/events/Hackathon 3rd Year/20260808_122344PMByGPSMapCamera.jpg', title: 'Inaugural Hackathon Address', caption: 'Faculty briefing teams on problem matrix and evaluation criteria.' }
       ]
     },
     {
-      id: 'robotics-testing',
-      title: 'Autonomous Hardware Testing',
-      tag: 'HARDWARE LAB',
-      date: 'DECEMBER 05, 2026',
-      venue: 'CAMPUS ROBOTICS TEST GROUND',
-      organizingTeam: 'Robotics & Edge AI Club',
-      image: 'assets/images/robotics.jpg',
-      shortDescription: 'Live field trials of custom ROS2 autonomous rovers, multi-agent drone swarms, edge neural inference, and LiDAR SLAM navigation.',
-      fullDescription: 'An intense hands-on proving ground where student engineering cohorts demonstrate fully autonomous rovers and aerial multi-rotor platforms. Equipped with embedded Jetson Orin AGX compute units and multi-beam solid-state LiDAR sensors, each rig navigates complex synthetic obstacle courses using sub-10ms neural inferencing and distributed ROS2 nodes.',
+      id: 'nodemation',
+      title: 'NODEMATION',
+      tag: 'AI AUTOMATION MASTERCLASS',
+      date: 'AUGUST 24, 2026',
+      venue: 'DATA SCIENCE SEMINAR HALL',
+      organizingTeam: 'IoT & Automation Club × Forum Tech Leads',
+      image: 'assets/images/events/NODEMATION/nodemation_main.jpg',
+      shortDescription: 'Hands-on masterclass on building autonomous LLM agents, API orchestration pipelines, and workflow automation with n8n.',
+      fullDescription: 'NODEMATION is the premier departmental hands-on workshop focused on enterprise workflow automation using n8n and generative AI nodes. Students engineered end-to-end webhook triggers, automated multi-agent systems, and LLM data extraction pipelines in a packed, high-energy lab environment.',
       stats: [
-        { label: 'Physical Rigs', value: '16 Custom Robots' },
-        { label: 'Inference Latency', value: '< 8.4 ms' },
-        { label: 'Test Course Area', value: '8,000 sq ft' },
-        { label: 'Middleware', value: 'ROS2 Humble' }
+        { label: 'Workshop Attendees', value: '120+ Students' },
+        { label: 'Workflows Built', value: '08 Pipelines' },
+        { label: 'Practical Labs', value: '100% Hands-On' },
+        { label: 'Session Duration', value: '04 Hours' }
       ],
       galleryImages: [
-        { src: 'assets/images/robotics.jpg', title: 'Autonomous Rover Trials', caption: 'All-terrain 6-wheel rover executing real-time 3D LiDAR SLAM.' },
-        { src: 'assets/images/aerospace.jpg', title: 'Edge Hardware Bench', caption: 'Telemetry calibration and thermal stress testing on Jetson Orin.' },
-        { src: 'assets/images/hackathon.jpg', title: 'Live Vision Telemetry', caption: 'Computer vision perception bounding boxes overlaying sensor feeds.' },
-        { src: 'assets/images/venture.jpg', title: 'Drone Swarm Synchronization', caption: 'Multi-agent collision avoidance test over designated outdoor flight grid.' }
+        { src: 'assets/images/events/NODEMATION/nodemation_main.jpg', title: 'NODEMATION Classroom Build Floor', caption: 'Full house of students actively coding and testing workflow automations.' },
+        { src: 'assets/images/events/NODEMATION/nodemation_cohort.jpg', title: 'Front-Row Coding Cohort', caption: 'Students engaged in live interactive node pipeline deployment.' },
+        { src: 'assets/images/events/n8n Automation Workshop/IMG-20260824-WA0063.jpg', title: 'Keynote Lecture & Walkthrough', caption: 'Demonstrating visual node orchestration and webhook integration.' },
+        { src: 'assets/images/events/n8n Automation Workshop/IMG-20260824-WA0073.jpg', title: 'Live AI Agent Demo', caption: 'Connecting local LLMs to automated trigger pipelines.' }
       ]
     },
     {
-      id: 'gpu-cluster',
-      title: 'GPU Model Training Floor',
-      tag: 'DEEP TECH R&D',
-      date: 'JANUARY 18, 2027',
-      venue: 'SUPERCOMPUTING CLUSTER (BLOCK IV)',
-      organizingTeam: 'Data Science Club & Research Chairs',
-      image: 'assets/images/aerospace.jpg',
-      shortDescription: 'High-density GPU computing environment executing billion-parameter fine-tuning, continuous pre-training, and data validation.',
-      fullDescription: 'Dedicated to high-performance deep learning engineering, the GPU Model Training Floor showcases the department’s enterprise server infrastructure. Undergraduates and faculty researchers utilize distributed PyTorch 2.4 pipelines, DeepSpeed ZeRO-3 memory optimizations, and NVLink interconnects to train domain-adapted vision-language models from scratch.',
+      id: 'acm-icpc-seminar',
+      title: 'ACM ICPC Competitive Coding Seminar',
+      tag: 'ALGORITHMIC EXCELLENCE',
+      date: 'AUGUST 24, 2026',
+      venue: 'CENTRAL AUDITORIUM',
+      organizingTeam: 'Coding & Algorithms Club & Faculty Mentors',
+      image: 'assets/images/events/ACM ICPC Seminar/IMG_20260824_144156.jpg',
+      shortDescription: 'Strategic masterclass on advanced dynamic programming, graph algorithms, and ICPC regional preparation.',
+      fullDescription: 'A high-impact seminar delivered by experienced competitive programmers and algorithmic mentors. The session dissected complex graph theory, number theory, and advanced dynamic programming patterns required to conquer ICPC regionals and national programming summits.',
       stats: [
-        { label: 'GPU Density', value: '32× NVIDIA A100' },
-        { label: 'Memory Bandwidth', value: '2.0 TB/sec' },
-        { label: 'Models Trained', value: '45+ Deployed' },
-        { label: 'Interconnect', value: 'InfiniBand HDR' }
+        { label: 'Auditorium Delegates', value: '150+ Attendees' },
+        { label: 'Algorithmic Paradigms', value: '15 Topics' },
+        { label: 'ICPC Roadmap', value: 'Regional Path' },
+        { label: 'Live Code Breakdown', value: '02 Hours' }
       ],
       galleryImages: [
-        { src: 'assets/images/aerospace.jpg', title: 'Server Rack Complex', caption: 'Liquid-cooled server arrays executing multi-node distributed training.' },
-        { src: 'assets/images/hackathon.jpg', title: 'Model Monitoring Console', caption: 'Real-time loss curve analysis and gradient norm telemetry on dashboard.' },
-        { src: 'assets/images/keynote.jpg', title: 'Research Cohort Workshop', caption: 'Graduate fellows optimizing CUDA kernels for attention acceleration.' },
-        { src: 'assets/images/gala.jpg', title: 'Deployment Milestone', caption: 'Commemorating 100,000th synthetic inference query on department cluster.' }
+        { src: 'assets/images/events/ACM ICPC Seminar/IMG_20260824_144156.jpg', title: 'Auditorium Keynote Stage', caption: 'Speaker presenting competitive algorithmic paradigms.' },
+        { src: 'assets/images/events/ACM ICPC Seminar/IMG_20260824_144136.jpg', title: 'Auditorium Delegates & Students', caption: 'Full house of aspiring competitive programmers and coders.' },
+        { src: 'assets/images/events/ACM ICPC Seminar/IMG_20260824_144031.jpg', title: 'Algorithmic Problem Breakdown', caption: 'Dissecting complex tree traversal and dynamic programming memoization.' },
+        { src: 'assets/images/events/ACM ICPC Seminar/IMG_20260824_144147.jpg', title: 'Interactive Q&A Session', caption: 'Student discussion on rating growth and contest time management.' }
       ]
     },
     {
-      id: 'excellence-gala',
-      title: 'Academic Excellence Awards',
-      tag: 'ANNUAL CONCLAVE',
-      date: 'FEBRUARY 22, 2027',
-      venue: 'GRAND CONVENTION HALL',
-      organizingTeam: 'Department Leadership & Executive Forum',
-      image: 'assets/images/gala.jpg',
-      shortDescription: 'Celebrating pioneering student research publications, national hackathon laureates, and distinguished faculty fellowships.',
-      fullDescription: 'The crown jewel of the department’s academic calendar, the Academic Excellence Awards Gala honors top-percentile academic scholars, student entrepreneurs who secured venture funding, ACM ICPC World Finalists, and faculty members who secured breakthrough patent grants. The evening concludes with formal inductions into the EMERGICON Honor Society.',
+      id: 'manthan4yuva-winners',
+      title: 'Manthan4Yuva State Conclave Felicitation',
+      tag: 'STATE CONCLAVE LAUREATES',
+      date: 'SEPTEMBER 02, 2026',
+      venue: 'CAMPUS FELICITATION ARENA',
+      organizingTeam: 'Department Executive Forum & Academic Council',
+      image: 'assets/images/events/Manthan4yuva Winners/IMG-20260902-WA0023.jpg',
+      shortDescription: 'Felicitation of department student champions winning top state honors at the Manthan4Yuva summit.',
+      fullDescription: 'Celebrating the outstanding triumph of student cohorts from CSE (Data Science) who secured premier awards and state-level recognition at Manthan4Yuva. The ceremony recognized technical brilliance, social innovation projects, and leadership excellence.',
       stats: [
-        { label: 'Honor Laureates', value: '48 Students' },
-        { label: 'Patents Awarded', value: '6 Granted' },
-        { label: 'Scholarships Given', value: '₹12,00,000' },
-        { label: 'Distinguished Guests', value: '250+' }
+        { label: 'State Laureates', value: '10 Champions' },
+        { label: 'Cash & Honorarium', value: '₹1,00,000+' },
+        { label: 'Project Category', value: 'AI Innovation' },
+        { label: 'Faculty Mentors', value: 'Honored' }
       ],
       galleryImages: [
-        { src: 'assets/images/gala.jpg', title: 'Honors Stage Presentation', caption: 'Best Research Publication Award presented by Vice Chancellor.' },
-        { src: 'assets/images/keynote.jpg', title: 'Presidential Address', caption: 'Forum President delivering retrospective on departmental achievements.' },
-        { src: 'assets/images/venture.jpg', title: 'Alumni Network Reception', caption: 'Graduating seniors connecting with venture founders and tech executives.' },
-        { src: 'assets/images/hackathon.jpg', title: 'Championship Trophy', caption: 'National hackathon winners receiving the annual gold cup.' }
+        { src: 'assets/images/events/Manthan4yuva Winners/IMG-20260902-WA0023.jpg', title: 'State Trophy Presentation', caption: 'Student champions receiving state conclave trophy and honors.' },
+        { src: 'assets/images/events/Manthan4yuva Winners/IMG-20260902-WA0025.jpg', title: 'Podium Winners Celebration', caption: 'Winning team holding commemorative awards with faculty.' },
+        { src: 'assets/images/events/Manthan4yuva Winners/IMG-20260902-WA0029.jpg', title: 'Faculty & Mentors Felicitation', caption: 'Faculty guides acknowledged for dedicated project supervision.' },
+        { src: 'assets/images/events/Manthan4yuva Winners/IMG-20260902-WA0019.jpg', title: 'Student Laureates Group Photo', caption: 'Department delegation celebrating collective achievement.' }
       ]
     },
     {
-      id: 'venture-demo',
-      title: 'Student Demo Day Showcase',
-      tag: 'VENTURE INCUBATION',
-      date: 'MARCH 15, 2027',
-      venue: 'INNOVATION COMPLEX ATRIUM',
-      organizingTeam: 'UI/UX Chapter & Venture Incubation Cell',
-      image: 'assets/images/venture.jpg',
-      shortDescription: 'Student founders and research fellows pitching production AI startups, spatial computer vision tools, and developer platforms.',
-      fullDescription: 'A fast-paced venture showcase where undergraduate developers transition from lab research to commercial product launches. Each student-led cohort delivers a 5-minute live product demonstration followed by diligence Q&A with angel investors, VC partners, and enterprise software directors, resulting in term-sheet commitments and seed incubations.',
+      id: 'department-inauguration',
+      title: 'EMERGICON Inauguration & Foundation',
+      tag: 'INAUGURAL CEREMONY',
+      date: 'AUGUST 14, 2026',
+      venue: 'CSE (DS) ATRIUM & CONVENTION HALL',
+      organizingTeam: 'EMERGICON Executive Forum Leadership',
+      image: 'assets/images/events/Department Inauguration/emergicon_inauguration_cohort.jpg',
+      shortDescription: 'Official ceremonial unveiling of the EMERGICON Student Forum and inaugural academic address.',
+      fullDescription: 'The grand inaugural ceremony marking the official establishment of the EMERGICON Student Forum. Attended by academic leadership, faculty dignitaries, and student council members, the event outlined the vision, charter, and roadmap for technical innovation in data science.',
       stats: [
-        { label: 'Startups Pitched', value: '14 Ventures' },
-        { label: 'Seed Commitments', value: '₹45,00,000' },
-        { label: 'VC Firms Attending', value: '22 Funds' },
-        { label: 'Live Users Onboarded', value: '85,000+' }
+        { label: 'Charter Launch', value: 'EMERGICON 2026' },
+        { label: 'Dignitaries Present', value: '15 Faculty Chairs' },
+        { label: 'Student Council', value: 'Inducted' },
+        { label: 'Technical Chapters', value: '10 Unveiled' }
       ],
       galleryImages: [
-        { src: 'assets/images/venture.jpg', title: 'Live Pitch Stage', caption: 'Student CEO presenting autonomous document AI platform to investors.' },
-        { src: 'assets/images/hackathon.jpg', title: 'Interactive Demo Booths', caption: 'Investors test-driving real-time spatial vision SDK on mobile rigs.' },
-        { src: 'assets/images/aerospace.jpg', title: 'Term Sheet Discussions', caption: 'Founding teams negotiating seed round term sheets in executive lounge.' },
-        { src: 'assets/images/gala.jpg', title: 'Demo Day Champion', caption: 'Winner of the Venture Incubation ₹10L Seed Grant announcement.' }
+        { src: 'assets/images/events/Department Inauguration/emergicon_inauguration_cohort.jpg', title: 'Grand Inauguration Council Photo', caption: 'Student council members in uniform blazers behind illuminated EMERGICON stage lettering.' },
+        { src: 'assets/images/events/Department Inauguration/emergicon_council_stage.jpg', title: 'Stage Lettering & Forum Leaders', caption: 'Close-up of the forum executive cohort and illuminated 3D insignia.' },
+        { src: 'assets/images/events/Department Inauguration/20260814_35339PMByGPSMapCamera.jpg', title: 'Lighting of the Lamp & Ceremony', caption: 'Traditional inaugural lamp lighting by department leadership.' },
+        { src: 'assets/images/events/Department Inauguration/20260814_34609PMByGPSMapCamera.jpg', title: 'Inaugural Dignitaries on Stage', caption: 'HOD and faculty heads addressing the inaugural student gathering.' }
+      ]
+    },
+    {
+      id: 'goa-and-zor',
+      title: 'GOA&ZOR',
+      tag: 'ANNUAL SPORTS & COHORT FEST',
+      date: 'SEPTEMBER 2026',
+      venue: 'CAMPUS SPORTS GROUND & ATHLETIC ARENA',
+      organizingTeam: 'Sports, Discipline & Student Experience Chapters',
+      image: 'assets/images/events/GOA_ZOR/goa_zor_main.jpg',
+      shortDescription: 'Flagship annual departmental outdoor sports festival, athletic tournaments, and cohort bonding games.',
+      fullDescription: 'GOA&ZOR is the premier annual outdoor sports conclave and cohort festival organized by the Department of CSE (Data Science) and EMERGICON. Bringing together students across all semesters along with faculty coordinators, the day celebrates athletic excellence, teamwork, and unity through competitive football matches, track sprints, tug-of-war, and outdoor recreation.',
+      stats: [
+        { label: 'Participating Students', value: '180+ Cohort' },
+        { label: 'Sporting Events', value: '08 Tournaments' },
+        { label: 'Competing Squads', value: '16 Teams' },
+        { label: 'Championship Trophy', value: 'Awarded' }
+      ],
+      galleryImages: [
+        { src: 'assets/images/events/GOA_ZOR/goa_zor_main.jpg', title: 'Grand Cohort Assembly', caption: 'Entire department student body, faculty, and forum leads at the main ground.' },
+        { src: 'assets/images/events/GOA_ZOR/goa_zor_cohort.jpg', title: 'Outdoor Sports Festival Arena', caption: 'Student cohorts and team squads gathered under the campus sun.' },
+        { src: 'assets/images/events/GOA_ZOR/goa_zor_squad_left.jpg', title: 'Alpha Squad & Players', caption: 'Senior student athletes and team captains preparing for match kickoff.' },
+        { src: 'assets/images/events/GOA_ZOR/goa_zor_squad_right.jpg', title: 'Beta Squad & Cheering Cohort', caption: 'Student delegates celebrating departmental spirit and camaraderie.' }
+      ]
+    },
+    {
+      id: 'moviecon',
+      title: 'MOVIECON &bull; Chhichhore Screening',
+      tag: 'CINEMATIC COHORT NIGHT',
+      date: 'SEPTEMBER 2026',
+      venue: 'DEPARTMENT MULTIPLEX AUDITORIUM',
+      organizingTeam: 'EMERGICON Cultural & Student Welfare Chapter',
+      image: 'assets/images/events/MOVIECON/moviecon_main.jpg',
+      shortDescription: 'Exclusive departmental cinematic screening of "Chhichhore" celebrating college life, friendship, and resilience.',
+      fullDescription: 'MOVIECON brought together the entire student body, faculty, and executive council of CSE (Data Science) for an unforgettable cinematic evening featuring the inspirational blockbuster "Chhichhore". The evening celebrated the spirit of engineering camaraderie, perseverance through challenges, and lifelong friendships, accompanied by big-screen projection, popcorn, and an electric atmosphere.',
+      stats: [
+        { label: 'Featured Film', value: 'Chhichhore' },
+        { label: 'Student Audience', value: '250+ Attendees' },
+        { label: 'Screening Format', value: 'Multiplex Projection' },
+        { label: 'Cohort Atmosphere', value: '100% Electrifying' }
+      ],
+      galleryImages: [
+        { src: 'assets/images/events/MOVIECON/moviecon_main.jpg', title: 'MOVIECON Big Screen Unveiling', caption: 'Auditorium crowd cheering as the EMERGICON MOVIECON marquee lights up.' },
+        { src: 'assets/images/events/MOVIECON/moviecon_banner.jpg', title: 'EMERGICON Presents MOVIECON', caption: 'Official glowing golden marquee and department insignia.' },
+        { src: 'assets/images/events/MOVIECON/moviecon_audience.jpg', title: 'Cheering Student Audience', caption: 'Students celebrating and filming the opening titles in the darkened auditorium.' },
+        { src: 'assets/images/events/MOVIECON/moviecon_marquee.jpg', title: 'Cinematic Marquee Detail', caption: 'Golden typographic insignia commemorating the department movie conclave.' }
+      ]
+    },
+    {
+      id: 'anti-ragging-awareness',
+      title: 'Anti-Ragging Awareness Conclave',
+      tag: 'CAMPUS WELFARE & SAFETY',
+      date: 'AUGUST 14, 2026',
+      venue: 'DEPARTMENT LECTURE THEATRE',
+      organizingTeam: 'Discipline Club & Student Welfare Committee',
+      image: 'assets/images/events/Anti_Ragging/anti_ragging_main.jpg',
+      shortDescription: 'Institutional orientation and legal awareness seminar fostering a zero-tolerance, safe, and inclusive campus environment.',
+      fullDescription: 'The Anti-Ragging Awareness Conclave is an essential institutional seminar organized by the Department of CSE (Data Science) and EMERGICON Discipline Council. Faculty mentors and student welfare coordinators briefed the incoming and senior cohorts on UGC regulations, anti-ragging helpline protocols, campus code of conduct, and fostering mutual respect and psychological safety across all academic batches.',
+      stats: [
+        { label: 'Student Attendance', value: '150+ Delegates' },
+        { label: 'UGC Compliance', value: '100% Zero-Tolerance' },
+        { label: 'Committee Oversight', value: 'Faculty & Council' },
+        { label: 'Session Protocol', value: 'Institutional Code' }
+      ],
+      galleryImages: [
+        { src: 'assets/images/events/Anti_Ragging/anti_ragging_main.jpg', title: 'Institutional Seminar & Faculty Address', caption: 'Faculty mentor briefing the packed department hall on campus welfare.' },
+        { src: 'assets/images/events/Anti_Ragging/anti_ragging_speaker.jpg', title: 'Code of Conduct Presentation', caption: 'Interactive session detailing anti-ragging legal frameworks and guidelines.' },
+        { src: 'assets/images/events/Anti_Ragging/anti_ragging_students.jpg', title: 'Student Cohort Orientation', caption: 'First-year and senior student cohorts participating in campus ethics induction.' },
+        { src: 'assets/images/events/Department Inauguration/20260814_34612PMByGPSMapCamera.jpg', title: 'Council Leadership Interaction', caption: 'Forum discipline leads addressing delegates on student support resources.' }
       ]
     }
   ];

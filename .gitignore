@@ -1,0 +1,11 @@
+# OS & System Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary source & backup folders
+Club heads/
+Co-heads/
+Core/
+assets/images/team_backup/
+assets/images/sample_option*.jpg
