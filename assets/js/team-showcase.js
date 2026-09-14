@@ -25,7 +25,7 @@
       role: 'President',
       badge: 'Core Leadership',
       designation: 'Executive Forum Lead // CSE (Data Science)',
-      photo: 'assets/images/team/core/Aryan_.png',
+      photo: 'assets/images/team/core/Aryan_.webp',
       linkedin: 'https://www.linkedin.com/in/aryan-nagmote-81b910331',
       email: 'mailto:aryannagmote.ds24@gmail.com',
       bio: 'Leading EMERGICON technical symposiums, research cohorts, and high-performance neural computing initiatives across the department.'
@@ -36,7 +36,7 @@
       role: 'Vice President',
       badge: 'Core Leadership',
       designation: 'Strategic Operations & Academic Affairs',
-      photo: 'assets/images/team/core/Yashaswini.png',
+      photo: 'assets/images/team/core/Yashaswini.webp',
       linkedin: 'https://www.linkedin.com/in/yashaswini-kalambe',
       email: 'mailto:yashaswinikalambe.ds24@sbjit.edu.in',
       bio: 'Coordinating student outreach, academic forum partnerships, and multi-track competitive hackathon schedules.'
@@ -47,7 +47,7 @@
       role: 'Secretary',
       badge: 'Core Leadership',
       designation: 'Council Secretariat & Documentation',
-      photo: 'assets/images/team/core/Tanish.png',
+      photo: 'assets/images/team/core/Tanish.webp',
       linkedin: 'https://www.linkedin.com/in/tanish-ghormare',
       email: 'mailto:tanishghormare.ds24@sbjit.edu.in',
       bio: 'Managing official departmental records, inter-college communiques, resolution charters, and delegate registrations.'
@@ -58,7 +58,7 @@
       role: 'Event Head',
       badge: 'Core Leadership',
       designation: 'Conclave Director & Stage Orchestration',
-      photo: 'assets/images/team/core/Rupali.png',
+      photo: 'assets/images/team/core/Rupali.webp',
       linkedin: 'https://www.linkedin.com/in/rupali-chaudhari-195a02342',
       email: 'mailto:rupalichaudhari.ds24@sbjit.edu.in',
       bio: 'Spearheading logistical execution, live stage management, keynote schedules, and delegate experiences for 1,400+ participants.'
@@ -69,7 +69,7 @@
       role: 'Treasurer',
       badge: 'Core Leadership',
       designation: 'Fiscal Management & Corporate Sponsorships',
-      photo: 'assets/images/team/core/Harsh.png',
+      photo: 'assets/images/team/core/Harsh.webp',
       linkedin: 'https://www.linkedin.com/in/harsh-supekar-100b39333',
       email: 'mailto:harshsupekar.ds24@sbjit.edu.in',
       bio: 'Overseeing departmental budgets, grant allocations, corporate tier sponsorships, and prize distributions.'
@@ -80,7 +80,7 @@
       role: 'Technical Head',
       badge: 'Core Leadership',
       designation: 'Systems Architecture & Compute Infrastructure',
-      photo: 'assets/images/team/core/Shravil.png',
+      photo: 'assets/images/team/core/Shravil.webp',
       linkedin: 'https://www.linkedin.com/in/shravil-karotiya',
       email: 'mailto:shravilkarotiya.ds24@sbjit.edu.in',
       bio: 'Directing GPU compute infrastructure, portal web architectures, AI gesture engines, and hackathon evaluation pipelines.'
@@ -91,7 +91,7 @@
       role: 'Media Head',
       badge: 'Core Leadership',
       designation: 'Visual Identity, Cinematography & Press',
-      photo: 'assets/images/team/core/Ansh.png',
+      photo: 'assets/images/team/core/Ansh.webp',
       linkedin: 'https://www.linkedin.com/in/ansh-meshram-712a03342',
       email: 'mailto:anshmeshram.ds24@sbjit.edu.in',
       bio: 'Curating the visual narrative, teaser cinematics, livestream engineering, and department editorial publications.'
@@ -102,7 +102,7 @@
       role: 'Sports Head',
       badge: 'Core Leadership',
       designation: 'Athletics, Esports & Tactical Tournaments',
-      photo: 'assets/images/team/core/Ayush_.png',
+      photo: 'assets/images/team/core/Ayush_.webp',
       linkedin: 'https://www.linkedin.com/in/ayush-khade-63b040424/',
       email: 'mailto:ayushk.ds24d@sbjit.edu.in',
       bio: 'Organizing inter-department athletic meets, annual collegiate esports arenas, and fitness conclaves.'
@@ -119,7 +119,7 @@
       role: 'Club Head',
       badge: 'Department Chapter // 01',
       tagline: 'Arts, Performing Stage & Creative Expression',
-      photo: 'assets/images/team/clubs/Palak Photo.png',
+      photo: 'assets/images/team/clubs/Palak Photo.webp',
       linkedin: 'https://www.linkedin.com/in/palak-singh-95074141b',
       email: 'mailto:palaksingh.ds24@sbjit.edu.in',
       bio: 'Fostering expressive cultural performances, annual gala productions, theatrical showcases, and inter-collegiate festivals.'
@@ -132,7 +132,7 @@
       role: 'Club Head',
       badge: 'Department Chapter // 02',
       tagline: 'Visual Arts, Exhibition & Installation Craft',
-      photo: 'assets/images/team/clubs/Ayush Wadiyalwar.png',
+      photo: 'assets/images/team/clubs/Ayush Wadiyalwar.webp',
       linkedin: 'https://www.linkedin.com/in/aayush-wadiyalwar-b343603a6',
       email: 'mailto:aayushwadiyalwar.ds24@sbjit.edu.in',
       bio: 'Designing experiential art installations, stage backdrops, creative origami, and exhibition aesthetics.'
@@ -145,7 +145,7 @@
       role: 'Club Head',
       badge: 'Department Chapter // 03',
       tagline: 'Algorithms, Data Structures & ICPC Sprints',
-      photo: 'assets/images/team/clubs/Aryan Hasoriya.png',
+      photo: 'assets/images/team/clubs/Aryan Hasoriya.webp',
       linkedin: 'https://www.linkedin.com/in/aryan-hasoriya-2694bb424',
       email: 'mailto:aryanhasoriya.ds24@sbjit.edu.in',
       bio: 'Hosting weekly algorithmic contests, ICPC coaching bootcamps, and high-intensity graph theory problem solving.'
@@ -158,7 +158,7 @@
       role: 'Club Head',
       badge: 'Department Chapter // 04',
       tagline: 'Foundation Models, LLM Agents & Multi-Agent Swarms',
-      photo: 'assets/images/team/clubs/Sujal Photo.png',
+      photo: 'assets/images/team/clubs/Sujal Photo.webp',
       linkedin: 'https://www.linkedin.com/in/sujal-kawale-5b34a741b',
       email: 'mailto:sujalk.ds24d@sbjit.edu.in',
       bio: 'Researching autonomous LLM agents, reinforcement learning from human feedback, and generative multi-modal systems.'
@@ -171,7 +171,7 @@
       role: 'Club Head',
       badge: 'Department Chapter // 05',
       tagline: 'Core CS Foundations & National Exam Cohorts',
-      photo: 'assets/images/team/clubs/Nandini Photo.png',
+      photo: 'assets/images/team/clubs/Nandini Photo.webp',
       linkedin: 'https://www.linkedin.com/in/nandini-kasare-744743377',
       email: 'mailto:nandinikasare.ds24@sbjit.edu.in',
       bio: 'Mentoring aspirants in Theory of Computation, Operating Systems, Database Internals, and Computer Organization.'
@@ -184,7 +184,7 @@
       role: 'Club Head',
       badge: 'Department Chapter // 06',
       tagline: 'Academic Certifications & Research Foundations',
-      photo: 'assets/images/team/clubs/Pushkar Photo.png',
+      photo: 'assets/images/team/clubs/Pushkar Photo.webp',
       linkedin: 'https://www.linkedin.com/in/pushkar-karnayake-358a04342',
       email: 'mailto:pushkarkarnayake.ds24@sbjit.edu.in',
       bio: 'Facilitating advanced IIT/IISc credit certification pathways and research cohort discussion forums.'
@@ -197,7 +197,7 @@
       role: 'Club Head',
       badge: 'Department Chapter // 07',
       tagline: 'Corporate Oratory, Debating & Executive Presence',
-      photo: 'assets/images/team/clubs/Samyak Photo.png',
+      photo: 'assets/images/team/clubs/Samyak Photo.webp',
       linkedin: 'https://www.linkedin.com/in/samyak-ukey-57544a342',
       email: 'mailto:samyakukey.ds24@sbjit.edu.in',
       bio: 'Cultivating leadership eloquence, executive interview preparation, debate summits, and boardroom pitch mastery.'
@@ -210,7 +210,7 @@
       role: 'Club Head',
       badge: 'Department Chapter // 08',
       tagline: 'Event Protocol, Crowd Flow & Council Governance',
-      photo: 'assets/images/team/clubs/Shivam Photo.png',
+      photo: 'assets/images/team/clubs/Shivam Photo.webp',
       linkedin: 'https://www.linkedin.com/in/shivam-yerekar-56b802325',
       email: 'mailto:shivamyerekar.ds24@sbjit.edu.in',
       bio: 'Ensuring seamless symposium protocol, crowd safety logistics, code of conduct, and delegate orientation.'
@@ -223,7 +223,7 @@
       role: 'Club Head',
       badge: 'Department Chapter // 09',
       tagline: 'Embedded Systems, Sensors & Edge Telemetry',
-      photo: 'assets/images/team/clubs/Kalash Photo.png',
+      photo: 'assets/images/team/clubs/Kalash Photo.webp',
       linkedin: 'https://www.linkedin.com/in/kalash-bamankar-713a03342',
       email: 'mailto:kalashbamankar.ds24@sbjit.edu.in',
       bio: 'Building embedded sensor arrays, micro-controller networks, edge robotics, and real-time smart campus hardware.'
@@ -236,7 +236,7 @@
       role: 'Club Head',
       badge: 'Department Chapter // 10',
       tagline: 'Design Systems, 3D Renders & Visual Identity',
-      photo: 'assets/images/team/clubs/Aryan Nagmote Photo.png',
+      photo: 'assets/images/team/clubs/Aryan Nagmote Photo.webp',
       linkedin: 'https://www.linkedin.com/in/aryan-nagmote-81b910331',
       email: 'mailto:aryannagmote.ds24@gmail.com',
       bio: 'Crafting brand design systems, WebGL digital assets, typographic posters, and visual conference collateral.'
@@ -251,7 +251,7 @@
       name: 'Ashwin Shende',
       role: 'Co-Secretary',
       track: 'Council Secretariat & Records',
-      photo: 'assets/images/team/coheads/Ashwin.png',
+      photo: 'assets/images/team/coheads/Ashwin.webp',
       linkedin: 'https://www.linkedin.com/in/ashwin-shende-47b295369',
       email: 'mailto:ashwins.ds25@sbjit.edu.in',
       bio: 'Managing official departmental records, inter-college communiques, and student council resolutions.'
@@ -261,7 +261,7 @@
       name: 'Rashika Dhakate',
       role: 'Co-Secretary',
       track: 'Documentation & Communique',
-      photo: 'assets/images/team/coheads/Rashika.png',
+      photo: 'assets/images/team/coheads/Rashika.webp',
       linkedin: 'https://linkedin.com/in/rashika-dhakate-582741963',
       email: 'mailto:rashikad.ds25@sbjit.edu.in',
       bio: 'Coordinating conclave documentation, student delegate charters, and annual department proceedings.'
@@ -273,7 +273,7 @@
       name: 'Chinmay Bhojne',
       role: 'Co-Event Head',
       track: 'Event Operations & Logistics',
-      photo: 'assets/images/team/coheads/Chinmay.png',
+      photo: 'assets/images/team/coheads/Chinmay.webp',
       linkedin: 'https://www.linkedin.com/in/chinmay-bhojne-085a52373',
       email: 'mailto:chinmayb.ds25@sbjit.edu.in',
       bio: 'Managing real-time hackathon venue deployment, audio-visual setups, and stage technical operations.'
@@ -283,7 +283,7 @@
       name: 'Parul Wanjari',
       role: 'Co-Event Head',
       track: 'Hospitality & Stage Protocol',
-      photo: 'assets/images/team/coheads/Parul.png',
+      photo: 'assets/images/team/coheads/Parul.webp',
       linkedin: 'https://www.linkedin.com/in/parul-wanjari-95b602430',
       email: 'mailto:parulw.ds25@sbjit.edu.in',
       bio: 'Facilitating keynote guest welcoming, guest speaker hospitality, and auditorium protocol management.'
@@ -295,7 +295,7 @@
       name: 'Bhumi Prajapati',
       role: 'Co-Treasurer',
       track: 'Accounts & Expenditure',
-      photo: 'assets/images/team/coheads/Bhoomi.png',
+      photo: 'assets/images/team/coheads/Bhoomi.webp',
       linkedin: 'https://www.linkedin.com/in/bhumi-prajapati-386b6338a',
       email: 'mailto:bhumip.ds25@sbjit.edu.in',
       bio: 'Auditing symposium equipment procurement, prize pool ledgers, and operational budgeting.'
@@ -305,7 +305,7 @@
       name: 'Sashank Fendar',
       role: 'Co-Treasurer',
       track: 'Budgeting & Corporate Grants',
-      photo: 'assets/images/team/coheads/Shashank.jpg',
+      photo: 'assets/images/team/coheads/Shashank.webp',
       linkedin: 'https://www.linkedin.com/in/shashank-fendar-02450441b/',
       email: 'mailto:shashankf.ds25@sbjit.edu.in',
       bio: 'Liaising with enterprise partners for sponsorship deliverables, fiscal accounts, and vendor contracts.'
@@ -317,7 +317,7 @@
       name: 'Hemraj Verma',
       role: 'Co-Technical Head',
       track: 'Systems Architecture & Infrastructure',
-      photo: 'assets/images/team/coheads/Hemraj.png',
+      photo: 'assets/images/team/coheads/Hemraj.webp',
       linkedin: 'https://www.linkedin.com/in/hemraj-varma-3b1540430',
       email: 'mailto:hemrajv.ds25@sbjit.edu.in',
       bio: 'Overseeing compute servers, cloud clusters, ML evaluation pipelines, and hardware laboratory testing rigs.'
@@ -327,7 +327,7 @@
       name: 'Aditya Agre',
       role: 'Co-Technical Head',
       track: 'Full-Stack & Neural Compute',
-      photo: 'assets/images/team/coheads/Aditya Aagre.png',
+      photo: 'assets/images/team/coheads/Aditya Aagre.webp',
       linkedin: 'https://www.linkedin.com/in/aditya-agre-3a4a40371',
       email: 'mailto:adityaa.ds25@sbjit.edu.in',
       bio: 'Building client-side interactive modules, portal architectures, WebGL shaders, and evaluation gateways.'
@@ -339,7 +339,7 @@
       name: 'Aditya Mohabe',
       role: 'Co-Media Head',
       track: 'Cinematography & Visual Production',
-      photo: 'assets/images/team/coheads/Aditya Mohabe.jpg',
+      photo: 'assets/images/team/coheads/Aditya Mohabe.webp',
       linkedin: 'https://www.linkedin.com/in/aditya-mohabe-b54992396',
       email: 'mailto:adityam.ds25@sbjit.edu.in',
       bio: 'Directing post-event aftermovies, 3D teaser cinematics, and department keynote visual productions.'
@@ -349,7 +349,7 @@
       name: 'Nishchay Hasoriya',
       role: 'Co-Media Head',
       track: 'Motion Design & Graphics',
-      photo: 'assets/images/team/coheads/Nischay.png',
+      photo: 'assets/images/team/coheads/Nischay.webp',
       linkedin: 'https://www.linkedin.com/in/nishchay-hasoriya-b64a58430',
       email: 'mailto:nishchayh.ds25@sbjit.edu.in',
       bio: 'Creating 3D motion graphics, symposium visual intros, digital banners, and interactive badges.'
@@ -359,7 +359,7 @@
       name: 'Tejas Chaudhary',
       role: 'Co-Media Head',
       track: 'Photography & Digital Archive',
-      photo: 'assets/images/team/coheads/Tejas.png',
+      photo: 'assets/images/team/coheads/Tejas.webp',
       linkedin: 'https://www.linkedin.com/in/tejas-choudhary-831b93423',
       email: 'mailto:tejasc.ds25@sbjit.edu.in',
       bio: 'Capturing high-resolution photo archives, speaker sessions, and hackathon gallery showcases.'
@@ -369,7 +369,7 @@
       name: 'Om Thaware',
       role: 'Co-Media Head',
       track: 'Livestream & Broadcast Engineering',
-      photo: 'assets/images/team/coheads/Om.png',
+      photo: 'assets/images/team/coheads/Om.webp',
       linkedin: 'https://www.linkedin.com/in/om-thaware-1737023b8',
       email: 'mailto:omth.ds25@sbjit.edu.in',
       bio: 'Engineering multi-camera live feeds, webinar broadcasts, and auditorium streaming infrastructure.'
@@ -379,7 +379,7 @@
       name: 'Tanishk Morekar',
       role: 'Co-Media Head',
       track: 'Public Relations & Press Releases',
-      photo: 'assets/images/team/coheads/Taniksh.png',
+      photo: 'assets/images/team/coheads/Taniksh.webp',
       linkedin: 'https://in.linkedin.com/in/taniksh-undefined-38aa99424',
       email: 'mailto:tanikshm.ds25@sbjit.edu.in',
       bio: 'Publishing departmental news bulletins, official press communiques, and social media releases.'
@@ -389,7 +389,7 @@
       name: 'Deepanshu Watkar',
       role: 'Co-Media Head',
       track: 'Visual Identity & Branding',
-      photo: 'assets/images/team/coheads/Deepanshu.jpg',
+      photo: 'assets/images/team/coheads/Deepanshu.webp',
       linkedin: 'https://www.linkedin.com/in/dipanshu-watkar-64581a430',
       email: 'mailto:deepanshuw.ds25@sbjit.edu.in',
       bio: 'Curating brand consistency, typographic hierarchy, and visual design assets across all conclaves.'
@@ -401,7 +401,7 @@
       name: 'Dhaeya Zade',
       role: 'Co-Sports Head',
       track: 'Athletics & Physical Tournaments',
-      photo: 'assets/images/team/coheads/Dheya_.png',
+      photo: 'assets/images/team/coheads/Dheya_.webp',
       linkedin: 'https://www.linkedin.com/in/dhyeya-zade-92917a368',
       email: 'mailto:Dhyeyaz.ds25@sbjit.edu.in',
       bio: 'Organizing inter-department athletic meets, track competitions, football leagues, and fitness rallies.'
@@ -411,7 +411,7 @@
       name: 'Parineeta Roy',
       role: 'Co-Sports Head',
       track: 'Inter-Departmental Athletics',
-      photo: 'assets/images/team/coheads/Parineeta.png',
+      photo: 'assets/images/team/coheads/Parineeta.webp',
       linkedin: 'https://www.linkedin.com/in/parineeta-roy-090876430',
       email: 'mailto:parineetar.ds25@sbjit.edu.in',
       bio: 'Coordinating female sports contingents, badminton championships, and wellness conclaves.'
@@ -421,7 +421,7 @@
       name: 'Bhavesh Kawadran',
       role: 'Co-Sports Head',
       track: 'Esports League & Tournament Arenas',
-      photo: 'assets/images/team/coheads/Bhawesh.png',
+      photo: 'assets/images/team/coheads/Bhawesh.webp',
       linkedin: 'https://www.linkedin.com/in/bhavesh-kawadkar-824a52410/?skipRedirect=true',
       email: 'mailto:bhaveshk.ds25@sbjit.edu.in',
       bio: 'Administering collegiate esports bracket tournaments, gaming server rigs, and LAN competition arenas.'
@@ -431,7 +431,7 @@
       name: 'Nisha Bambal',
       role: 'Co-Sports Head',
       track: 'Sports Logistics & Coordination',
-      photo: 'assets/images/team/coheads/Nisha.png',
+      photo: 'assets/images/team/coheads/Nisha.webp',
       linkedin: 'https://www.linkedin.com/in/nisha-bambal-1ba997381',
       email: 'mailto:nishab.ds25@sbjit.edu.in',
       bio: 'Managing sports equipment inventories, field scheduling, referee coordination, and tournament fixtures.'
@@ -509,7 +509,7 @@
            aria-label="View profile of ${member.name}, ${member.role}">
         
         <div class="orbit-card-photo-wrap">
-          <img src="${member.photo}" alt="${member.name}" class="orbit-card-photo" loading="lazy">
+          <img src="${member.photo}" alt="${member.name}" class="orbit-card-photo" loading="lazy" decoding="async">
           
           <div class="member-contact-overlay" aria-label="Connect with ${member.name}">
             <a href="${member.linkedin}" target="_blank" rel="noopener noreferrer" class="contact-icon-btn contact-linkedin" title="LinkedIn Profile" aria-label="LinkedIn" onclick="event.stopPropagation();">
@@ -763,7 +763,7 @@
            aria-label="View profile of ${member.name}, ${member.role}">
         <div class="co-card-viewport">
           <div class="co-card-photo-container">
-            <img src="${member.photo}" alt="${member.name}" class="co-card-img" loading="lazy">
+            <img src="${member.photo}" alt="${member.name}" class="co-card-img" loading="lazy" decoding="async">
             <div class="co-card-vignette"></div>
 
             <div class="member-contact-overlay" aria-label="Connect with ${member.name}">

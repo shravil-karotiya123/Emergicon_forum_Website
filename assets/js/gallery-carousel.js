@@ -25,7 +25,7 @@
       date: 'SEPTEMBER 01, 2026',
       venue: 'DEPARTMENT LAB SUITE & AUDITORIUM',
       organizingTeam: 'EMERGICON Technical Council & SIH Chapter',
-      image: 'assets/images/events/SIH Internal Hackathon 2026/20260901_12516PMByGPSMapCamera.jpg',
+      image: 'assets/images/events/SIH Internal Hackathon 2026/20260901_12516PMByGPSMapCamera.webp',
       shortDescription: 'Department-wide Smart India Hackathon internal scrutiny and continuous prototype build sprint.',
       fullDescription: 'The SIH Internal Hackathon 2026 convened over 40 multidisciplinary student engineering teams from the Department of CSE (Data Science) to architect and pitch high-impact solutions for national problem statements. Student cohorts defended live working prototypes before an expert evaluation jury of senior faculty and industry mentors.',
       stats: [
@@ -35,10 +35,10 @@
         { label: 'Evaluation Panels', value: '04 Expert Juries' }
       ],
       galleryImages: [
-        { src: 'assets/images/events/SIH Internal Hackathon 2026/20260901_12516PMByGPSMapCamera.jpg', title: 'Hackathon Build Floor', caption: 'Teams assembling neural pipelines and full-stack prototypes.' },
-        { src: 'assets/images/events/SIH Internal Hackathon 2026/20260901_124612PMByGPSMapCamera.jpg', title: 'Live Prototype Demonstrations', caption: 'Student teams presenting real-time system architectures to faculty.' },
-        { src: 'assets/images/events/SIH Internal Hackathon 2026/20260901_125300PMByGPSMapCamera.jpg', title: 'Jury Evaluation & Scrutiny', caption: 'Panel of judges evaluating algorithmic accuracy and scalability.' },
-        { src: 'assets/images/events/SIH Internal Hackathon 2026/20260901_124746PMByGPSMapCamera.jpg', title: 'Sprint Collaboration', caption: 'Continuous coding and edge hardware integration in progress.' }
+        { src: 'assets/images/events/SIH Internal Hackathon 2026/20260901_12516PMByGPSMapCamera.webp', title: 'Hackathon Build Floor', caption: 'Teams assembling neural pipelines and full-stack prototypes.' },
+        { src: 'assets/images/events/SIH Internal Hackathon 2026/20260901_124612PMByGPSMapCamera.webp', title: 'Live Prototype Demonstrations', caption: 'Student teams presenting real-time system architectures to faculty.' },
+        { src: 'assets/images/events/SIH Internal Hackathon 2026/20260901_125300PMByGPSMapCamera.webp', title: 'Jury Evaluation & Scrutiny', caption: 'Panel of judges evaluating algorithmic accuracy and scalability.' },
+        { src: 'assets/images/events/SIH Internal Hackathon 2026/20260901_124746PMByGPSMapCamera.webp', title: 'Sprint Collaboration', caption: 'Continuous coding and edge hardware integration in progress.' }
       ]
     },
     {
@@ -48,7 +48,7 @@
       date: 'AUGUST 17, 2026',
       venue: 'INNOVATION & INCUBATION LAB',
       organizingTeam: 'Coding & Algorithms Club × AI/ML Chapter',
-      image: 'assets/images/events/Ideathon and Hackathon/ideathon_pitch_team.jpg',
+      image: 'assets/images/events/Ideathon and Hackathon/ideathon_pitch_team.webp',
       shortDescription: 'Rapid ideation, system design pitches, and prototype sprints tackling real-world problem statements.',
       fullDescription: 'A premier departmental convergence of ideation and rapid software engineering where students pitched novel architectural concepts and validated minimum viable products. The conclave emphasized algorithmic scalability, data privacy frameworks, and intuitive user experiences.',
       stats: [
@@ -58,10 +58,10 @@
         { label: 'Student Delegates', value: '140+ Attendees' }
       ],
       galleryImages: [
-        { src: 'assets/images/events/Ideathon and Hackathon/ideathon_pitch_team.jpg', title: 'Tech Titans Project Presentation', caption: 'Student cohort defending their "Nagpur Future Simulator" architectural model before the jury.' },
-        { src: 'assets/images/events/Ideathon and Hackathon/ideathon_screen_focus.jpg', title: 'Interactive Simulator Pitch', caption: 'Lead presenter detailing the data pipeline schema and system UI.' },
-        { src: 'assets/images/events/Ideathon and Hackathon/20260817_53333PMByGPSMapCamera.jpg', title: 'Jury Diligence & Q&A', caption: 'Technical jury cross-examining candidate architecture diagrams.' },
-        { src: 'assets/images/events/Ideathon and Hackathon/20260817_51633PMByGPSMapCamera.jpg', title: 'Main Innovation Pitch Stage', caption: 'Student founders pitching data science and AI applications.' }
+        { src: 'assets/images/events/Ideathon and Hackathon/ideathon_pitch_team.webp', title: 'Tech Titans Project Presentation', caption: 'Student cohort defending their "Nagpur Future Simulator" architectural model before the jury.' },
+        { src: 'assets/images/events/Ideathon and Hackathon/ideathon_screen_focus.webp', title: 'Interactive Simulator Pitch', caption: 'Lead presenter detailing the data pipeline schema and system UI.' },
+        { src: 'assets/images/events/Ideathon and Hackathon/20260817_53333PMByGPSMapCamera.webp', title: 'Jury Diligence & Q&A', caption: 'Technical jury cross-examining candidate architecture diagrams.' },
+        { src: 'assets/images/events/Ideathon and Hackathon/20260817_51633PMByGPSMapCamera.webp', title: 'Main Innovation Pitch Stage', caption: 'Student founders pitching data science and AI applications.' }
       ]
     },
     {
@@ -71,7 +71,7 @@
       date: 'AUGUST 08, 2026',
       venue: 'CSE (DS) ADVANCED LAB CLUSTER',
       organizingTeam: '3rd Year Department Cohort & Forum Leads',
-      image: 'assets/images/events/Hackathon 3rd Year/20260808_25950PMByGPSMapCamera.jpg',
+      image: 'assets/images/events/Hackathon 3rd Year/20260808_25950PMByGPSMapCamera.webp',
       shortDescription: 'Intensive 12-hour full-stack and machine learning coding sprint designed for 3rd-year engineering students.',
       fullDescription: 'An exclusive departmental coding marathon challenging 3rd-year undergraduates to architect end-to-end data science pipelines, computer vision tools, and web applications. Focus areas included distributed data ingestion, cloud deployment, and microservices architecture.',
       stats: [
@@ -81,10 +81,10 @@
         { label: 'Final Laureates', value: 'Top 3 Podium' }
       ],
       galleryImages: [
-        { src: 'assets/images/events/Hackathon 3rd Year/20260808_25950PMByGPSMapCamera.jpg', title: 'Computing Lab Sprint Arena', caption: '3rd-year engineering cohorts in active code sprint mode.' },
-        { src: 'assets/images/events/Hackathon 3rd Year/20260808_25941PMByGPSMapCamera.jpg', title: 'Architecture Review', caption: 'Senior peer mentors reviewing repository git commits and code.' },
-        { src: 'assets/images/events/Hackathon 3rd Year/20260808_25954PMByGPSMapCamera.jpg', title: 'Live Software Deployment', caption: 'Teams benchmarking real-time inference latency.' },
-        { src: 'assets/images/events/Hackathon 3rd Year/20260808_122344PMByGPSMapCamera.jpg', title: 'Inaugural Hackathon Address', caption: 'Faculty briefing teams on problem matrix and evaluation criteria.' }
+        { src: 'assets/images/events/Hackathon 3rd Year/20260808_25950PMByGPSMapCamera.webp', title: 'Computing Lab Sprint Arena', caption: '3rd-year engineering cohorts in active code sprint mode.' },
+        { src: 'assets/images/events/Hackathon 3rd Year/20260808_25941PMByGPSMapCamera.webp', title: 'Architecture Review', caption: 'Senior peer mentors reviewing repository git commits and code.' },
+        { src: 'assets/images/events/Hackathon 3rd Year/20260808_25954PMByGPSMapCamera.webp', title: 'Live Software Deployment', caption: 'Teams benchmarking real-time inference latency.' },
+        { src: 'assets/images/events/Hackathon 3rd Year/20260808_122344PMByGPSMapCamera.webp', title: 'Inaugural Hackathon Address', caption: 'Faculty briefing teams on problem matrix and evaluation criteria.' }
       ]
     },
     {
@@ -94,7 +94,7 @@
       date: 'AUGUST 24, 2026',
       venue: 'DATA SCIENCE SEMINAR HALL',
       organizingTeam: 'IoT & Automation Club × Forum Tech Leads',
-      image: 'assets/images/events/NODEMATION/nodemation_main.jpg',
+      image: 'assets/images/events/NODEMATION/nodemation_main.webp',
       shortDescription: 'Hands-on masterclass on building autonomous LLM agents, API orchestration pipelines, and workflow automation with n8n.',
       fullDescription: 'NODEMATION is the premier departmental hands-on workshop focused on enterprise workflow automation using n8n and generative AI nodes. Students engineered end-to-end webhook triggers, automated multi-agent systems, and LLM data extraction pipelines in a packed, high-energy lab environment.',
       stats: [
@@ -104,10 +104,10 @@
         { label: 'Session Duration', value: '04 Hours' }
       ],
       galleryImages: [
-        { src: 'assets/images/events/NODEMATION/nodemation_main.jpg', title: 'NODEMATION Classroom Build Floor', caption: 'Full house of students actively coding and testing workflow automations.' },
-        { src: 'assets/images/events/NODEMATION/nodemation_cohort.jpg', title: 'Front-Row Coding Cohort', caption: 'Students engaged in live interactive node pipeline deployment.' },
-        { src: 'assets/images/events/n8n Automation Workshop/IMG-20260824-WA0063.jpg', title: 'Keynote Lecture & Walkthrough', caption: 'Demonstrating visual node orchestration and webhook integration.' },
-        { src: 'assets/images/events/n8n Automation Workshop/IMG-20260824-WA0073.jpg', title: 'Live AI Agent Demo', caption: 'Connecting local LLMs to automated trigger pipelines.' }
+        { src: 'assets/images/events/NODEMATION/nodemation_main.webp', title: 'NODEMATION Classroom Build Floor', caption: 'Full house of students actively coding and testing workflow automations.' },
+        { src: 'assets/images/events/NODEMATION/nodemation_cohort.webp', title: 'Front-Row Coding Cohort', caption: 'Students engaged in live interactive node pipeline deployment.' },
+        { src: 'assets/images/events/n8n Automation Workshop/IMG-20260824-WA0063.webp', title: 'Keynote Lecture & Walkthrough', caption: 'Demonstrating visual node orchestration and webhook integration.' },
+        { src: 'assets/images/events/n8n Automation Workshop/IMG-20260824-WA0073.webp', title: 'Live AI Agent Demo', caption: 'Connecting local LLMs to automated trigger pipelines.' }
       ]
     },
     {
@@ -117,7 +117,7 @@
       date: 'AUGUST 24, 2026',
       venue: 'CENTRAL AUDITORIUM',
       organizingTeam: 'Coding & Algorithms Club & Faculty Mentors',
-      image: 'assets/images/events/ACM ICPC Seminar/IMG_20260824_144156.jpg',
+      image: 'assets/images/events/ACM ICPC Seminar/IMG_20260824_144156.webp',
       shortDescription: 'Strategic masterclass on advanced dynamic programming, graph algorithms, and ICPC regional preparation.',
       fullDescription: 'A high-impact seminar delivered by experienced competitive programmers and algorithmic mentors. The session dissected complex graph theory, number theory, and advanced dynamic programming patterns required to conquer ICPC regionals and national programming summits.',
       stats: [
@@ -127,10 +127,10 @@
         { label: 'Live Code Breakdown', value: '02 Hours' }
       ],
       galleryImages: [
-        { src: 'assets/images/events/ACM ICPC Seminar/IMG_20260824_144156.jpg', title: 'Auditorium Keynote Stage', caption: 'Speaker presenting competitive algorithmic paradigms.' },
-        { src: 'assets/images/events/ACM ICPC Seminar/IMG_20260824_144136.jpg', title: 'Auditorium Delegates & Students', caption: 'Full house of aspiring competitive programmers and coders.' },
-        { src: 'assets/images/events/ACM ICPC Seminar/IMG_20260824_144031.jpg', title: 'Algorithmic Problem Breakdown', caption: 'Dissecting complex tree traversal and dynamic programming memoization.' },
-        { src: 'assets/images/events/ACM ICPC Seminar/IMG_20260824_144147.jpg', title: 'Interactive Q&A Session', caption: 'Student discussion on rating growth and contest time management.' }
+        { src: 'assets/images/events/ACM ICPC Seminar/IMG_20260824_144156.webp', title: 'Auditorium Keynote Stage', caption: 'Speaker presenting competitive algorithmic paradigms.' },
+        { src: 'assets/images/events/ACM ICPC Seminar/IMG_20260824_144136.webp', title: 'Auditorium Delegates & Students', caption: 'Full house of aspiring competitive programmers and coders.' },
+        { src: 'assets/images/events/ACM ICPC Seminar/IMG_20260824_144031.webp', title: 'Algorithmic Problem Breakdown', caption: 'Dissecting complex tree traversal and dynamic programming memoization.' },
+        { src: 'assets/images/events/ACM ICPC Seminar/IMG_20260824_144147.webp', title: 'Interactive Q&A Session', caption: 'Student discussion on rating growth and contest time management.' }
       ]
     },
     {
@@ -140,7 +140,7 @@
       date: 'SEPTEMBER 02, 2026',
       venue: 'CAMPUS FELICITATION ARENA',
       organizingTeam: 'Department Executive Forum & Academic Council',
-      image: 'assets/images/events/Manthan4yuva Winners/IMG-20260902-WA0023.jpg',
+      image: 'assets/images/events/Manthan4yuva Winners/IMG-20260902-WA0023.webp',
       shortDescription: 'Felicitation of department student champions winning top state honors at the Manthan4Yuva summit.',
       fullDescription: 'Celebrating the outstanding triumph of student cohorts from CSE (Data Science) who secured premier awards and state-level recognition at Manthan4Yuva. The ceremony recognized technical brilliance, social innovation projects, and leadership excellence.',
       stats: [
@@ -150,10 +150,10 @@
         { label: 'Faculty Mentors', value: 'Honored' }
       ],
       galleryImages: [
-        { src: 'assets/images/events/Manthan4yuva Winners/IMG-20260902-WA0023.jpg', title: 'State Trophy Presentation', caption: 'Student champions receiving state conclave trophy and honors.' },
-        { src: 'assets/images/events/Manthan4yuva Winners/IMG-20260902-WA0025.jpg', title: 'Podium Winners Celebration', caption: 'Winning team holding commemorative awards with faculty.' },
-        { src: 'assets/images/events/Manthan4yuva Winners/IMG-20260902-WA0029.jpg', title: 'Faculty & Mentors Felicitation', caption: 'Faculty guides acknowledged for dedicated project supervision.' },
-        { src: 'assets/images/events/Manthan4yuva Winners/IMG-20260902-WA0019.jpg', title: 'Student Laureates Group Photo', caption: 'Department delegation celebrating collective achievement.' }
+        { src: 'assets/images/events/Manthan4yuva Winners/IMG-20260902-WA0023.webp', title: 'State Trophy Presentation', caption: 'Student champions receiving state conclave trophy and honors.' },
+        { src: 'assets/images/events/Manthan4yuva Winners/IMG-20260902-WA0025.webp', title: 'Podium Winners Celebration', caption: 'Winning team holding commemorative awards with faculty.' },
+        { src: 'assets/images/events/Manthan4yuva Winners/IMG-20260902-WA0029.webp', title: 'Faculty & Mentors Felicitation', caption: 'Faculty guides acknowledged for dedicated project supervision.' },
+        { src: 'assets/images/events/Manthan4yuva Winners/IMG-20260902-WA0019.webp', title: 'Student Laureates Group Photo', caption: 'Department delegation celebrating collective achievement.' }
       ]
     },
     {
@@ -163,7 +163,7 @@
       date: 'AUGUST 14, 2026',
       venue: 'CSE (DS) ATRIUM & CONVENTION HALL',
       organizingTeam: 'EMERGICON Executive Forum Leadership',
-      image: 'assets/images/events/Department Inauguration/emergicon_inauguration_cohort.jpg',
+      image: 'assets/images/events/Department Inauguration/emergicon_inauguration_cohort.webp',
       shortDescription: 'Official ceremonial unveiling of the EMERGICON Student Forum and inaugural academic address.',
       fullDescription: 'The grand inaugural ceremony marking the official establishment of the EMERGICON Student Forum. Attended by academic leadership, faculty dignitaries, and student council members, the event outlined the vision, charter, and roadmap for technical innovation in data science.',
       stats: [
@@ -173,10 +173,10 @@
         { label: 'Technical Chapters', value: '10 Unveiled' }
       ],
       galleryImages: [
-        { src: 'assets/images/events/Department Inauguration/emergicon_inauguration_cohort.jpg', title: 'Grand Inauguration Council Photo', caption: 'Student council members in uniform blazers behind illuminated EMERGICON stage lettering.' },
-        { src: 'assets/images/events/Department Inauguration/emergicon_council_stage.jpg', title: 'Stage Lettering & Forum Leaders', caption: 'Close-up of the forum executive cohort and illuminated 3D insignia.' },
-        { src: 'assets/images/events/Department Inauguration/20260814_35339PMByGPSMapCamera.jpg', title: 'Lighting of the Lamp & Ceremony', caption: 'Traditional inaugural lamp lighting by department leadership.' },
-        { src: 'assets/images/events/Department Inauguration/20260814_34609PMByGPSMapCamera.jpg', title: 'Inaugural Dignitaries on Stage', caption: 'HOD and faculty heads addressing the inaugural student gathering.' }
+        { src: 'assets/images/events/Department Inauguration/emergicon_inauguration_cohort.webp', title: 'Grand Inauguration Council Photo', caption: 'Student council members in uniform blazers behind illuminated EMERGICON stage lettering.' },
+        { src: 'assets/images/events/Department Inauguration/emergicon_council_stage.webp', title: 'Stage Lettering & Forum Leaders', caption: 'Close-up of the forum executive cohort and illuminated 3D insignia.' },
+        { src: 'assets/images/events/Department Inauguration/20260814_35339PMByGPSMapCamera.webp', title: 'Lighting of the Lamp & Ceremony', caption: 'Traditional inaugural lamp lighting by department leadership.' },
+        { src: 'assets/images/events/Department Inauguration/20260814_34609PMByGPSMapCamera.webp', title: 'Inaugural Dignitaries on Stage', caption: 'HOD and faculty heads addressing the inaugural student gathering.' }
       ]
     },
     {
@@ -186,7 +186,7 @@
       date: 'SEPTEMBER 2026',
       venue: 'CAMPUS SPORTS GROUND & ATHLETIC ARENA',
       organizingTeam: 'Sports, Discipline & Student Experience Chapters',
-      image: 'assets/images/events/GOA_ZOR/goa_zor_main.jpg',
+      image: 'assets/images/events/GOA_ZOR/goa_zor_main.webp',
       shortDescription: 'Flagship annual departmental outdoor sports festival, athletic tournaments, and cohort bonding games.',
       fullDescription: 'GOA&ZOR is the premier annual outdoor sports conclave and cohort festival organized by the Department of CSE (Data Science) and EMERGICON. Bringing together students across all semesters along with faculty coordinators, the day celebrates athletic excellence, teamwork, and unity through competitive football matches, track sprints, tug-of-war, and outdoor recreation.',
       stats: [
@@ -196,10 +196,10 @@
         { label: 'Championship Trophy', value: 'Awarded' }
       ],
       galleryImages: [
-        { src: 'assets/images/events/GOA_ZOR/goa_zor_main.jpg', title: 'Grand Cohort Assembly', caption: 'Entire department student body, faculty, and forum leads at the main ground.' },
-        { src: 'assets/images/events/GOA_ZOR/goa_zor_cohort.jpg', title: 'Outdoor Sports Festival Arena', caption: 'Student cohorts and team squads gathered under the campus sun.' },
-        { src: 'assets/images/events/GOA_ZOR/goa_zor_squad_left.jpg', title: 'Alpha Squad & Players', caption: 'Senior student athletes and team captains preparing for match kickoff.' },
-        { src: 'assets/images/events/GOA_ZOR/goa_zor_squad_right.jpg', title: 'Beta Squad & Cheering Cohort', caption: 'Student delegates celebrating departmental spirit and camaraderie.' }
+        { src: 'assets/images/events/GOA_ZOR/goa_zor_main.webp', title: 'Grand Cohort Assembly', caption: 'Entire department student body, faculty, and forum leads at the main ground.' },
+        { src: 'assets/images/events/GOA_ZOR/goa_zor_cohort.webp', title: 'Outdoor Sports Festival Arena', caption: 'Student cohorts and team squads gathered under the campus sun.' },
+        { src: 'assets/images/events/GOA_ZOR/goa_zor_squad_left.webp', title: 'Alpha Squad & Players', caption: 'Senior student athletes and team captains preparing for match kickoff.' },
+        { src: 'assets/images/events/GOA_ZOR/goa_zor_squad_right.webp', title: 'Beta Squad & Cheering Cohort', caption: 'Student delegates celebrating departmental spirit and camaraderie.' }
       ]
     },
     {
@@ -209,7 +209,7 @@
       date: 'SEPTEMBER 2026',
       venue: 'DEPARTMENT MULTIPLEX AUDITORIUM',
       organizingTeam: 'EMERGICON Cultural & Student Welfare Chapter',
-      image: 'assets/images/events/MOVIECON/moviecon_main.jpg',
+      image: 'assets/images/events/MOVIECON/moviecon_main.webp',
       shortDescription: 'Exclusive departmental cinematic screening of "Chhichhore" celebrating college life, friendship, and resilience.',
       fullDescription: 'MOVIECON brought together the entire student body, faculty, and executive council of CSE (Data Science) for an unforgettable cinematic evening featuring the inspirational blockbuster "Chhichhore". The evening celebrated the spirit of engineering camaraderie, perseverance through challenges, and lifelong friendships, accompanied by big-screen projection, popcorn, and an electric atmosphere.',
       stats: [
@@ -219,10 +219,10 @@
         { label: 'Cohort Atmosphere', value: '100% Electrifying' }
       ],
       galleryImages: [
-        { src: 'assets/images/events/MOVIECON/moviecon_main.jpg', title: 'MOVIECON Big Screen Unveiling', caption: 'Auditorium crowd cheering as the EMERGICON MOVIECON marquee lights up.' },
-        { src: 'assets/images/events/MOVIECON/moviecon_banner.jpg', title: 'EMERGICON Presents MOVIECON', caption: 'Official glowing golden marquee and department insignia.' },
-        { src: 'assets/images/events/MOVIECON/moviecon_audience.jpg', title: 'Cheering Student Audience', caption: 'Students celebrating and filming the opening titles in the darkened auditorium.' },
-        { src: 'assets/images/events/MOVIECON/moviecon_marquee.jpg', title: 'Cinematic Marquee Detail', caption: 'Golden typographic insignia commemorating the department movie conclave.' }
+        { src: 'assets/images/events/MOVIECON/moviecon_main.webp', title: 'MOVIECON Big Screen Unveiling', caption: 'Auditorium crowd cheering as the EMERGICON MOVIECON marquee lights up.' },
+        { src: 'assets/images/events/MOVIECON/moviecon_banner.webp', title: 'EMERGICON Presents MOVIECON', caption: 'Official glowing golden marquee and department insignia.' },
+        { src: 'assets/images/events/MOVIECON/moviecon_audience.webp', title: 'Cheering Student Audience', caption: 'Students celebrating and filming the opening titles in the darkened auditorium.' },
+        { src: 'assets/images/events/MOVIECON/moviecon_marquee.webp', title: 'Cinematic Marquee Detail', caption: 'Golden typographic insignia commemorating the department movie conclave.' }
       ]
     },
     {
@@ -232,7 +232,7 @@
       date: 'AUGUST 14, 2026',
       venue: 'DEPARTMENT LECTURE THEATRE',
       organizingTeam: 'Discipline Club & Student Welfare Committee',
-      image: 'assets/images/events/Anti_Ragging/anti_ragging_main.jpg',
+      image: 'assets/images/events/Anti_Ragging/anti_ragging_main.webp',
       shortDescription: 'Institutional orientation and legal awareness seminar fostering a zero-tolerance, safe, and inclusive campus environment.',
       fullDescription: 'The Anti-Ragging Awareness Conclave is an essential institutional seminar organized by the Department of CSE (Data Science) and EMERGICON Discipline Council. Faculty mentors and student welfare coordinators briefed the incoming and senior cohorts on UGC regulations, anti-ragging helpline protocols, campus code of conduct, and fostering mutual respect and psychological safety across all academic batches.',
       stats: [
@@ -242,10 +242,10 @@
         { label: 'Session Protocol', value: 'Institutional Code' }
       ],
       galleryImages: [
-        { src: 'assets/images/events/Anti_Ragging/anti_ragging_main.jpg', title: 'Institutional Seminar & Faculty Address', caption: 'Faculty mentor briefing the packed department hall on campus welfare.' },
-        { src: 'assets/images/events/Anti_Ragging/anti_ragging_speaker.jpg', title: 'Code of Conduct Presentation', caption: 'Interactive session detailing anti-ragging legal frameworks and guidelines.' },
-        { src: 'assets/images/events/Anti_Ragging/anti_ragging_students.jpg', title: 'Student Cohort Orientation', caption: 'First-year and senior student cohorts participating in campus ethics induction.' },
-        { src: 'assets/images/events/Department Inauguration/20260814_34612PMByGPSMapCamera.jpg', title: 'Council Leadership Interaction', caption: 'Forum discipline leads addressing delegates on student support resources.' }
+        { src: 'assets/images/events/Anti_Ragging/anti_ragging_main.webp', title: 'Institutional Seminar & Faculty Address', caption: 'Faculty mentor briefing the packed department hall on campus welfare.' },
+        { src: 'assets/images/events/Anti_Ragging/anti_ragging_speaker.webp', title: 'Code of Conduct Presentation', caption: 'Interactive session detailing anti-ragging legal frameworks and guidelines.' },
+        { src: 'assets/images/events/Anti_Ragging/anti_ragging_students.webp', title: 'Student Cohort Orientation', caption: 'First-year and senior student cohorts participating in campus ethics induction.' },
+        { src: 'assets/images/events/Department Inauguration/20260814_34612PMByGPSMapCamera.webp', title: 'Council Leadership Interaction', caption: 'Forum discipline leads addressing delegates on student support resources.' }
       ]
     }
   ];
@@ -385,7 +385,7 @@
       card.innerHTML = `
         <div class="carousel-card-inner">
           <div class="carousel-card-img-wrap">
-            <img src="${evt.image}" alt="${evt.title}" class="carousel-card-img" loading="lazy">
+            <img src="${evt.image}" alt="${evt.title}" class="carousel-card-img" loading="lazy" decoding="async">
             <div class="carousel-card-tag-badge">
               <span class="badge-dot-live"></span>
               ${evt.tag}
