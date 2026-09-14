@@ -2133,18 +2133,31 @@
   border-radius: var(--radius-lg);
   overflow: hidden;
   background: radial-gradient(circle at center, rgba(14, 165, 233, 0.08) 0%, rgba(10, 15, 29, 0.95) 100%);
-  border: 1.5px dashed rgba(56, 189, 248, 0.35);
+  border: 1.5px solid rgba(56, 189, 248, 0.35);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   position: relative;
   transition: all 0.3s ease;
+  box-shadow: 0 0 25px rgba(56, 189, 248, 0.12);
 }
 
 .faculty-hod-photo-box:hover {
   border-color: #38BDF8;
-  box-shadow: 0 0 25px rgba(56, 189, 248, 0.15);
+  box-shadow: 0 0 35px rgba(56, 189, 248, 0.3);
+}
+
+.faculty-hod-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  transition: transform 0.4s ease;
+}
+
+.faculty-hod-photo-box:hover .faculty-hod-img {
+  transform: scale(1.03);
 }
 
 .faculty-placeholder-inner {
@@ -2207,7 +2220,7 @@
 }
 
 .faculty-hod-message-scroll.expanded {
-  max-height: 600px;
+  max-height: 750px;
   mask-image: none;
   -webkit-mask-image: none;
 }
@@ -2218,6 +2231,58 @@
 
 .faculty-hod-message-scroll strong {
   color: #FFFFFF;
+}
+
+.faculty-hod-signature-bar {
+  margin-top: 1.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba(56, 189, 248, 0.15);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.faculty-hod-sig-details {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.faculty-hod-sig-name {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.faculty-hod-sig-dept {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: #38BDF8;
+}
+
+.faculty-hod-contact-links {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.faculty-hod-contact-link {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.2s ease;
+}
+
+.faculty-hod-contact-link:hover {
+  color: #38BDF8;
+  text-decoration: underline;
 }
 
 /* Coordinators Section */
