@@ -411,7 +411,7 @@
       name: 'Parineeta Roy',
       role: 'Co-Sports Head',
       track: 'Inter-Departmental Athletics',
-      photo: 'assets/images/leader-2.jpg',
+      photo: 'assets/images/team/coheads/Parineeta.png',
       linkedin: 'https://www.linkedin.com/in/parineeta-roy-090876430',
       email: 'mailto:parineetar.ds25@sbjit.edu.in',
       bio: 'Coordinating female sports contingents, badminton championships, and wellness conclaves.'
