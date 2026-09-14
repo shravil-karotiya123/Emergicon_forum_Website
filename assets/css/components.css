@@ -2129,7 +2129,8 @@
 
 .faculty-hod-photo-box {
   width: 100%;
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 1 / 1;
+  max-width: 290px;
   border-radius: var(--radius-lg);
   overflow: hidden;
   background: radial-gradient(circle at center, rgba(14, 165, 233, 0.08) 0%, rgba(10, 15, 29, 0.95) 100%);
