@@ -807,16 +807,18 @@
     coResumeTimeout = setTimeout(() => {
       coIsInteracting = false;
       startCoAutoTimer();
-    }, 5500);
+    }, 7500);
   }
 
   function startCoAutoTimer() {
     stopCoAutoTimer();
+    const isMobile = window.innerWidth <= 768;
+    const interval = isMobile ? 6800 : 5500;
     coAutoTimer = setInterval(() => {
       if (!coIsInteracting && !isModalOpen) {
         coTargetOffset = Math.round(coTargetOffset) + 1;
       }
-    }, 4500);
+    }, interval);
   }
 
   function stopCoAutoTimer() {
@@ -906,7 +908,7 @@
       lastX = e.clientX;
       lastTime = now;
 
-      const sensitivity = window.innerWidth <= 768 ? 160 : 250;
+      const sensitivity = window.innerWidth <= 768 ? 140 : 250;
       coTargetOffset -= (dx / sensitivity);
       coCurrentOffset = coTargetOffset; // direct responsiveness
     });
@@ -962,13 +964,15 @@
   function renderCoScrollerLoop() {
     if (!coScrollerStage || !coCardsRing) return;
 
-    // Smooth Lerp Spring Interpolation
-    coCurrentOffset += (coTargetOffset - coCurrentOffset) * 0.12;
+    const isMobile = window.innerWidth <= 768;
+    const isTablet = window.innerWidth <= 1024 && !isMobile;
+
+    // Smoother, relaxed Lerp Spring Interpolation (slower & calmer glide)
+    const lerpSpeed = isMobile ? 0.075 : 0.09;
+    coCurrentOffset += (coTargetOffset - coCurrentOffset) * lerpSpeed;
 
     const cards = coCardsRing.querySelectorAll('.co-3d-card');
     const total = coTeamData.length;
-    const isMobile = window.innerWidth <= 768;
-    const isTablet = window.innerWidth <= 1024 && !isMobile;
 
     const normActiveIndex = ((Math.round(coCurrentOffset) % total) + total) % total;
 
@@ -1005,13 +1009,13 @@
       card.style.visibility = 'visible';
       card.style.pointerEvents = 'auto';
 
-      // Cylindrical Arc Trigonometry with enhanced visibility & panoramic spread
-      const angle = diff * (isMobile ? 0.30 : (isTablet ? 0.24 : 0.20));
-      const radius = isMobile ? 320 : (isTablet ? 520 : 680);
+      // Cylindrical Arc Trigonometry tailored for compact mobile view
+      const angle = diff * (isMobile ? 0.32 : (isTablet ? 0.24 : 0.20));
+      const radius = isMobile ? 280 : (isTablet ? 520 : 680);
       const x = Math.sin(angle) * radius;
       const z = (Math.cos(angle) - 1) * radius * 0.85;
-      const rotateY = -diff * (isMobile ? 12 : (isTablet ? 14 : 16));
-      const scale = Math.max(0.68, 1.05 - absDiff * (isMobile ? 0.12 : 0.085));
+      const rotateY = -diff * (isMobile ? 10 : (isTablet ? 14 : 16));
+      const scale = Math.max(0.68, 1.05 - absDiff * (isMobile ? 0.11 : 0.085));
       const opacity = Math.max(0, 1.0 - absDiff * 0.14);
       const brightness = Math.max(0.65, 1.02 - absDiff * 0.09);
       const zIndex = Math.round(100 - absDiff * 12);

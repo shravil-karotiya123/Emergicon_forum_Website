@@ -3728,8 +3728,13 @@
   .orbit-card-photo-wrap { height: 210px; }
   .orbit-card-name { font-size: 1.05rem; }
   .orbit-card-designation { font-size: 0.72rem; }
-  .co-team-curved-stage { height: 280px; }
-  .co-curved-card { width: 170px; height: 230px; margin-top: -115px; padding: 0.65rem; }
+  .co-scroller-3d-stage { height: 360px; }
+  .co-3d-card { width: 185px; height: 285px; margin-top: -142px; margin-left: -92px; border-radius: var(--radius-md); }
+  .co-card-photo-container { height: 190px; }
+  .co-card-details { padding: 0.65rem 0.75rem 0.85rem; gap: 2px; }
+  .co-card-name { font-size: 0.96rem; }
+  .co-card-track { font-size: 0.68rem; }
+  .co-card-role-badge { font-size: 0.6rem; }
   .clubs-cluster-stage { height: 500px; }
   .clubs-focal-hub { width: 180px; padding: 1rem 0.85rem; }
   .focal-club-name { font-size: 1rem; }
@@ -3760,4 +3765,21 @@
   .robot-avatar-stage { width: 90px; height: 120px; }
   .robot-speech-bubble { width: calc(100vw - 2rem); margin-left: 0; }
   .robot-speech-bubble::before { display: none; }
+}
+
+@media (max-width: 480px) {
+  .core-orbit-stage { height: 380px; }
+  .orbit-card-3d { width: 195px; height: 295px; margin-top: -147px; margin-left: -97px; }
+  .orbit-card-photo-wrap { height: 175px; }
+  .orbit-card-name { font-size: 0.95rem; }
+  .orbit-card-designation { font-size: 0.68rem; }
+  
+  .co-scroller-3d-stage { height: 330px; }
+  .co-3d-card { width: 165px; height: 258px; margin-top: -129px; margin-left: -82px; border-radius: var(--radius-sm); }
+  .co-card-photo-container { height: 170px; }
+  .co-card-details { padding: 0.5rem 0.65rem 0.75rem; gap: 2px; }
+  .co-card-name { font-size: 0.88rem; }
+  .co-card-track { font-size: 0.62rem; }
+  .co-card-role-badge { font-size: 0.56rem; }
+  .co-floating-logo { display: none; }
 }
