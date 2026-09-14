@@ -457,4 +457,35 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   }
+
+  // ------------------------------------------------------------------------
+  // 9. FACULTY BIO & HOD MESSAGE READ MORE TOGGLES
+  // ------------------------------------------------------------------------
+  const facultyReadMoreBtns = document.querySelectorAll('.faculty-read-more-btn');
+  facultyReadMoreBtns.forEach((btn) => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      const parentWrap = btn.closest('.faculty-coord-bio-wrap') || btn.closest('.faculty-hod-message-wrap');
+      if (!parentWrap) return;
+
+      const scrollBox = parentWrap.querySelector('.faculty-coord-bio-scroll') || parentWrap.querySelector('.faculty-hod-message-scroll');
+      const textSpan = btn.querySelector('.read-btn-text');
+
+      const isExpanded = btn.classList.toggle('expanded');
+      btn.setAttribute('aria-expanded', isExpanded ? 'true' : 'false');
+
+      if (scrollBox) {
+        scrollBox.classList.toggle('expanded', isExpanded);
+      }
+
+      if (textSpan) {
+        textSpan.textContent = isExpanded ? 'Read Less' : 'Read More';
+      }
+
+      if (window.EmergiconSound && typeof window.EmergiconSound.click === 'function') {
+        window.EmergiconSound.click();
+      }
+    });
+  });
 });
+

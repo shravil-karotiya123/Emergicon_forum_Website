@@ -2074,6 +2074,34 @@
 /* --------------------------------------------------------------------------
    9. FACULTY SECTION (HOD LEADERSHIP SPOTLIGHT & COORDINATORS GRID)
    -------------------------------------------------------------------------- */
+/* Custom Cyberpunk Slide Bar (Scrollbar) */
+.custom-slide-bar {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(56, 189, 248, 0.45) rgba(15, 23, 42, 0.6);
+}
+
+.custom-slide-bar::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+.custom-slide-bar::-webkit-scrollbar-track {
+  background: rgba(10, 15, 29, 0.7);
+  border-radius: 4px;
+}
+
+.custom-slide-bar::-webkit-scrollbar-thumb {
+  background: rgba(56, 189, 248, 0.4);
+  border-radius: 4px;
+  border: 1px solid rgba(56, 189, 248, 0.15);
+  transition: all 0.2s ease;
+}
+
+.custom-slide-bar::-webkit-scrollbar-thumb:hover {
+  background: #38BDF8;
+  box-shadow: 0 0 10px rgba(56, 189, 248, 0.8);
+}
+
 .faculty-hod-card {
   background: var(--bg-card);
   border: 1px solid var(--border-subtle);
@@ -2157,20 +2185,38 @@
   margin-bottom: 1.5rem;
 }
 
-.faculty-hod-message {
+.faculty-hod-message-wrap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.faculty-hod-message-scroll {
+  max-height: 180px;
+  overflow-y: auto;
+  padding-right: 14px;
   font-size: 0.92rem;
   line-height: 1.8;
   color: var(--text-secondary);
   display: flex;
   flex-direction: column;
   gap: 1.1rem;
+  transition: max-height 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+  mask-image: linear-gradient(to bottom, black calc(100% - 30px), transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, black calc(100% - 30px), transparent 100%);
 }
 
-.faculty-hod-message p {
+.faculty-hod-message-scroll.expanded {
+  max-height: 600px;
+  mask-image: none;
+  -webkit-mask-image: none;
+}
+
+.faculty-hod-message-scroll p {
   margin: 0;
 }
 
-.faculty-hod-message strong {
+.faculty-hod-message-scroll strong {
   color: #FFFFFF;
 }
 
@@ -2192,7 +2238,7 @@
   background: var(--bg-card);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-lg);
-  padding: 2rem 1.75rem;
+  padding: 2rem 1.75rem 1.75rem;
   display: flex;
   flex-direction: column;
   transition: all var(--transition-fast);
@@ -2208,25 +2254,38 @@
 }
 
 .faculty-coord-photo-wrap {
-  width: 100%;
-  aspect-ratio: 1 / 1;
-  max-width: 130px;
-  margin: 0 auto 1.5rem auto;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 1.35rem auto;
   border-radius: 50%;
   overflow: hidden;
-  background: radial-gradient(circle at center, rgba(14, 165, 233, 0.12) 0%, rgba(10, 15, 29, 0.95) 100%);
-  border: 1.5px dashed rgba(56, 189, 248, 0.35);
+  background: radial-gradient(circle at center, rgba(14, 165, 233, 0.15) 0%, rgba(10, 15, 29, 0.95) 100%);
+  border: 2px solid rgba(56, 189, 248, 0.4);
+  box-shadow: 0 0 20px rgba(56, 189, 248, 0.15);
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   position: relative;
-  transition: all 0.3s ease;
+  transition: all 0.35s ease;
+  flex-shrink: 0;
 }
 
 .faculty-coord-photo-wrap:hover {
   border-color: #38BDF8;
-  box-shadow: 0 0 20px rgba(56, 189, 248, 0.25);
+  box-shadow: 0 0 28px rgba(56, 189, 248, 0.35);
+  transform: scale(1.05);
+}
+
+.faculty-coord-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 12%;
+  transition: transform 0.4s ease;
+}
+
+.faculty-coord-photo-wrap:hover .faculty-coord-img {
+  transform: scale(1.08);
 }
 
 .faculty-placeholder-icon {
@@ -2271,12 +2330,73 @@
   margin: 0 auto 1.25rem auto;
 }
 
+.faculty-coord-bio-wrap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.25rem;
+}
+
+.faculty-coord-bio-scroll {
+  max-height: 100px;
+  overflow-y: auto;
+  padding-right: 8px;
+  transition: max-height 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  mask-image: linear-gradient(to bottom, black calc(100% - 24px), transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, black calc(100% - 24px), transparent 100%);
+}
+
+.faculty-coord-bio-scroll.expanded {
+  max-height: 380px;
+  mask-image: none;
+  -webkit-mask-image: none;
+}
+
 .faculty-coord-bio {
   font-size: 0.84rem;
   line-height: 1.7;
   color: var(--text-secondary);
-  margin-bottom: 1.5rem;
-  flex-grow: 1;
+  margin: 0;
+}
+
+/* Read More Button styling */
+.faculty-read-more-btn {
+  display: inline-flex;
+  align-items: center;
+  align-self: flex-start;
+  gap: 6px;
+  background: rgba(56, 189, 248, 0.08);
+  border: 1px solid rgba(56, 189, 248, 0.25);
+  border-radius: 4px;
+  padding: 4px 10px;
+  margin-top: 0.65rem;
+  color: #38BDF8;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.faculty-read-more-btn:hover {
+  background: rgba(56, 189, 248, 0.18);
+  border-color: #38BDF8;
+  color: #FFFFFF;
+  box-shadow: 0 0 12px rgba(56, 189, 248, 0.3);
+  transform: translateY(-1px);
+}
+
+.faculty-read-more-btn .read-more-chevron {
+  transition: transform 0.3s ease;
+}
+
+.faculty-read-more-btn.expanded .read-more-chevron {
+  transform: rotate(180deg);
+}
+
+.faculty-hod-expand-btn {
+  margin-top: 0.85rem;
 }
 
 .faculty-coord-email {
