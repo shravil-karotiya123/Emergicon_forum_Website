@@ -3,9 +3,13 @@
 Thumbs.db
 desktop.ini
 
-# Temporary source & backup folders
-Club heads/
-Co-heads/
-Core/
+# Temporary source & backup folders (root only)
+/Club heads/
+/Co-heads/
+/Core/
 assets/images/team_backup/
 assets/images/sample_option*.jpg
+
+# Explicitly ensure team core images are tracked
+!assets/images/team/core/
+!assets/images/team/core/*
