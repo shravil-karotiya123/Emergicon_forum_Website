@@ -180,15 +180,15 @@
       ]
     },
     {
-      id: 'goa-and-zor',
-      title: 'GOA&ZOR',
+      id: 'goal-and-zor',
+      title: 'Goal&Zor',
       tag: 'ANNUAL SPORTS & COHORT FEST',
       date: 'SEPTEMBER 2026',
       venue: 'CAMPUS SPORTS GROUND & ATHLETIC ARENA',
       organizingTeam: 'Sports, Discipline & Student Experience Chapters',
       image: 'assets/images/events/GOA_ZOR/goa_zor_main.webp',
       shortDescription: 'Flagship annual departmental outdoor sports festival, athletic tournaments, and cohort bonding games.',
-      fullDescription: 'GOA&ZOR is the premier annual outdoor sports conclave and cohort festival organized by the Department of CSE (Data Science) and EMERGICON. Bringing together students across all semesters along with faculty coordinators, the day celebrates athletic excellence, teamwork, and unity through competitive football matches, track sprints, tug-of-war, and outdoor recreation.',
+      fullDescription: 'Goal&Zor is the premier annual outdoor sports conclave and cohort festival organized by the Department of CSE (Data Science) and EMERGICON. Bringing together students across all semesters along with faculty coordinators, the day celebrates athletic excellence, teamwork, and unity through competitive football matches, track sprints, tug-of-war, and outdoor recreation.',
       stats: [
         { label: 'Participating Students', value: '180+ Cohort' },
         { label: 'Sporting Events', value: '08 Tournaments' },
